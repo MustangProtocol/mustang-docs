@@ -9,7 +9,7 @@ const FeatureList = [
     Svg: require('@site/static/img/blue.png').default,
     description: (
       <>
-        <Translate id="feature.redeemable.desc">Each stablecoin issued by Nerite is redeemable for $1 of collateral in the system.</Translate>
+        <Translate id="feature.redeemable.desc">Each stablecoin issued by Mustang Finance is redeemable for $1 of collateral in the system.</Translate>
       </>
     ),
   },
@@ -18,7 +18,7 @@ const FeatureList = [
     Svg: require('@site/static/img/green.png').default,
     description: (
       <>
-        <Translate id="feature.streamable.desc">USND is a streaming super-token stablecoin built with the Superfluid protocol.</Translate>
+        <Translate id="feature.streamable.desc">MUST is a streaming super-token stablecoin built with the Superfluid protocol.</Translate>
       </>
     ),
   },
@@ -27,7 +27,7 @@ const FeatureList = [
     Svg: require('@site/static/img/red.png').default,
     description: (
       <>
-        <Translate id="feature.sustainable.desc">USND yield is sustainable and comes from multiple sources. 100% of protocol revenue is directed towards users.</Translate>
+        <Translate id="feature.sustainable.desc">MUST yield is sustainable and comes from multiple sources. 100% of protocol revenue is directed towards users.</Translate>
       </>
     ),
   },

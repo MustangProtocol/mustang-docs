@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Nerite Protocol Contracts
+# Mustang Finance Protocol Contracts
 
 ## Prod Deployed Contracts 
 

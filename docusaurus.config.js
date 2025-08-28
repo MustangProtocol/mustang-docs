@@ -10,19 +10,19 @@ import { themes as prismThemes } from "prism-react-renderer";
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: "Nerite Protocol Documentation",
+  title: "Mustang Finance Protocol Documentation",
   tagline: "Go Slow.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
-  url: "https://neriteorg.github.io",
+  url: "https://mustangfinance.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   baseUrl: "/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: "NeriteOrg", // Usually your GitHub org/user name.
-  projectName: "neriteorg.github.io", // Usually your repo name.
+  organizationName: "mustangfinance", // Usually your GitHub org/user name.
+  projectName: "mustangfinance.github.io", // Usually your repo name.
   deploymentBranch: "gh-pages",
   trailingSlash: false,
 
@@ -34,7 +34,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "es"],
+    locales: ["en"],
   },
 
   presets: [
@@ -46,7 +46,7 @@ const config = {
           sidebarPath: "./sidebars.js",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl: "https://github.com/NeriteOrg/neriteorg.github.io",
+          editUrl: "https://github.com/mustangfinance/mustangfinance.github.io",
         },
         theme: {
           customCss: "./src/css/custom.css",
@@ -62,11 +62,11 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: "img/nerite-social-card.jpg",
+      image: "img/mustang-social-card.jpg",
       navbar: {
-        title: "Nerite",
+        title: "Mustang Finance",
         logo: {
-          alt: "Nerite Logo",
+          alt: "Mustang Finance Logo",
           src: "/img/logo.svg",
         },
         items: [
@@ -81,7 +81,7 @@ const config = {
             position: "left",
           },
           {
-            href: "https://github.com/NeriteOrg/nerite-docs",
+            href: "https://github.com/mustangfinance/mustang-docs",
             label: "GitHub",
             position: "right",
           },
@@ -95,11 +95,11 @@ const config = {
             items: [
               {
                 label: "User Docs",
-                to: "http://docs.nerite.org/docs/category/user-docs/",
+                to: "http://docs.mustangfinance.org/docs/category/user-docs/",
               },
               {
                 label: "Technical Documentation",
-                to: "http://docs.nerite.org/docs/category/technical-documentation/",
+                to: "http://docs.mustangfinance.org/docs/category/technical-documentation/",
               },
             ],
           },
@@ -108,7 +108,7 @@ const config = {
             items: [
               {
                 label: "Github",
-                href: "https://github.com/NeriteOrg/nerite",
+                href: "https://github.com/mustangfinance/mustang",
               },
               {
                 label: "Discord",
@@ -116,7 +116,7 @@ const config = {
               },
               {
                 label: "X",
-                href: "https://x.com/neriteorg",
+                href: "https://x.com/mustangfinance",
               },
             ],
           },

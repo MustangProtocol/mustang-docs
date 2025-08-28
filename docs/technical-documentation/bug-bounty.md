@@ -4,7 +4,7 @@ sidebar_position: 3
 
 # Liquity's Bug Bounty
 
-A bug bounty program for Liquity’s underlying smart contracts that Nerite uses is now live. We intend for hackers to look for smart contract vulnerabilities in our system that can lead to loss of funds or locked components.
+A bug bounty program for Liquity's underlying smart contracts that Mustang Finance uses is now live. We intend for hackers to look for smart contract vulnerabilities in our system that can lead to loss of funds or locked components.
 
 Check out Liquity's [bug bounty](https://docs.liquity.org/v2-documentation/bug-bounty) program for the most up to date information.
 

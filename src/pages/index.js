@@ -26,7 +26,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to={userDocsUrl}>
-            <Translate id="homepage.userDocs">Nerite User Docs</Translate>
+            <Translate id="homepage.userDocs">Mustang Finance User Docs</Translate>
           </Link>
         </div>
         <br />
@@ -35,7 +35,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to={techDocsUrl}>
-            <Translate id="homepage.technicalDocs">Nerite Technical Docs</Translate>
+            <Translate id="homepage.technicalDocs">Mustang Finance Technical Docs</Translate>
           </Link>
         </div>
       </div>
@@ -48,7 +48,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Learn about the Nerite protocol.">
+      description="Learn about the Mustang Finance protocol.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

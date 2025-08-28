@@ -1,4 +1,4 @@
-# Nerite Docs
+# Mustang Finance Docs
 
 This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator. Thanks for the awesome open source tools, Docusaurus. 
 

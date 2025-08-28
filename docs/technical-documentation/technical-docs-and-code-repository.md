@@ -8,13 +8,13 @@ Technical documentation and code repository information for developers.
 
 ## Primary Core Repository
 
-https://github.com/NeriteOrg/nerite
+https://github.com/mustangfinance/mustang
 
-Contains the core contracts and libraries for the Nerite Protocol. Also includes the front end and everything you need to run your own instance of the app.
+Contains the core contracts and libraries for the Mustang Finance Protocol. Also includes the front end and everything you need to run your own instance of the app.
 
 The ReadMe also has more design and architecture information.
 
-## Tech spec changes on Nerite from Liquity V2
+## Tech spec changes on Mustang Finance from Liquity V2
 
 ### Delegation
 `ActivePool.sol` now has `delegateTokens` funtion. Any tokens can be delegated to the `delegate` role. The role can be update by `governance`, which is the DAO of NERI holders. Anyone can call delegate function safely since it always delegates to the `delegate` role.
