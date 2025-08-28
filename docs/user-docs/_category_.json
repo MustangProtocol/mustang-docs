@@ -1,0 +1,8 @@
+{
+  "label": "User Docs",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "description": "All the answers to your questions about Nerite."
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "label": "Documentación técnica",
+  "position": 2,
+  "link": {
+    "type": "generated-index",
+    "description": "Bajo el capó."
+  }
+}
