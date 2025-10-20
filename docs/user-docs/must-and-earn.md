@@ -40,7 +40,7 @@ In contrast, when MUST trades below $1, arbitrageurs will initiate redemptions t
 * Protocol Incentivized Liquidity (PIL): Supply liquidity for MUST onto the incentivized external DEXes like Bunni and Camelot. 
 * Stake NERI (coming soon): Accrue voting power over liquidity incentives by staking NERI. On top of directing revenue, NERI stakers can potentially receive bribes (subject to governance vote) from third parties as an added bonus.
 
-Users can also use "set-and-forget" strategies, like depositing MUST into the Yearn managed [yMUST vault](https://app.mustangfinance.org/earn/ymust). This vault aggigates yield between all the  stability pools and is recommended for users looking for the simplest MUST strategy. It issues the [yMUST token](https://arbiscan.io/address/0x252b965400862d94bda35fecf7ee0f204a53cc36), which is a yield bearing version of MUST.
+Users can also use "set-and-forget" strategies, like depositing MUST into the Yearn managed [yMUST vault](https://app.must.finance/earn/ymust). This vault aggigates yield between all the  stability pools and is recommended for users looking for the simplest MUST strategy. It issues the [yMUST token](https://arbiscan.io/address/0x252b965400862d94bda35fecf7ee0f204a53cc36), which is a yield bearing version of MUST.
 ![yUSNDvault](/img/yUSNDvault.png)
 
 ### Where does the yield for the Stability Pool deposits come from?

@@ -79,7 +79,7 @@ Once your assets arrive on Saga chain:
    - Currency Symbol: SAGA
 
 2. **Start Using Mustang Finance**:
-   - Visit [app.mustangfinance.org](https://app.mustangfinance.org)
+   - Visit [app.must.finance](https://app.must.finance/)
    - Connect your wallet
    - Use your bridged assets as collateral to mint MUST stablecoin
    - Deposit MUST in stability pools to earn yield
