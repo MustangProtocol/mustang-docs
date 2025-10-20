@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Mustang Finance Protocol Documentation",
-  tagline: "Go Slow.",
+  tagline: "CDP for the open range.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -64,7 +64,7 @@ const config = {
       // Replace with your project's social card
       image: "img/mustang-social-card.jpg",
       navbar: {
-        title: "Mustang Finance",
+        // title: "Mustang Finance",
         logo: {
           alt: "Mustang Finance Logo",
           src: "/img/logo.svg",

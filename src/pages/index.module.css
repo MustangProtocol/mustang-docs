@@ -8,6 +8,11 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  background-image: url('/img/heading.png');
+  background-size: cover;
+  /* margin-top: -200px; */
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 996px) {

@@ -6,7 +6,7 @@ import Translate from '@docusaurus/Translate';
 const FeatureList = [
   {
     title: <Translate id="feature.redeemable.title">Redeemable</Translate>,
-    Svg: require('@site/static/img/blue.png').default,
+    Svg: require('@site/img/orange_no_bg.png').default,
     description: (
       <>
         <Translate id="feature.redeemable.desc">Each stablecoin issued by Mustang Finance is redeemable for $1 of collateral in the system.</Translate>
@@ -15,7 +15,7 @@ const FeatureList = [
   },
   {
     title: <Translate id="feature.streamable.title">Streamable</Translate>,
-    Svg: require('@site/static/img/green.png').default,
+    Svg: require('@site/img/purple_no_bg.png').default,
     description: (
       <>
         <Translate id="feature.streamable.desc">MUST is a streaming super-token stablecoin built with the Superfluid protocol.</Translate>
@@ -24,7 +24,7 @@ const FeatureList = [
   },
   {
     title: <Translate id="feature.sustainable.title">Sustainable</Translate>,
-    Svg: require('@site/static/img/red.png').default,
+    Svg: require('@site/img/yellow_no_bg.png').default,
     description: (
       <>
         <Translate id="feature.sustainable.desc">MUST yield is sustainable and comes from multiple sources. 100% of protocol revenue is directed towards users.</Translate>
