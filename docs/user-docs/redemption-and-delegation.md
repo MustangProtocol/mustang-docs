@@ -73,7 +73,7 @@ Here is an example: given outside debt amounts of 100 MUST, 50 MUST and 100 MUST
 
 ### Is there a redemption fee?
 
-Yes. The redemption fee mechanics are broadly the same as in Liquity V1, but with adapted parametrization leading to a faster fee decay. The redemption fee is taken as a cut of the total ETH/LST drawn from the system in a redemption. Contrary to Liquity V1, the fee does not go to the LQTY stakers but stays with the users as part of their collateral.
+Yes. The redemption fee mechanics are broadly the same as in Liquity V1, but with adapted parametrization leading to a faster fee decay. The redemption fee is taken as a cut of the total ETH/LST drawn from the system in a redemption. Contrary to Liquity V1, the fee stays with the users as part of their collateral.
 
 Redemption fees are based on the `baseRate` state variable, which is dynamically updated. The `baseRate` increases with each redemption, and exponentially decays according to time passed since the last redemption (half-life of 6 hours).
 

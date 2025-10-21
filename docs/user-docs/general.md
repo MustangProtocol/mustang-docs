@@ -13,7 +13,6 @@ Mustang Finance is a decentralized borrowing protocol that lets users deposit WE
 - Borrow MUST
 - 1-click multiply exposure to collateral assets
 - Earn yield by depositing MUST in the stability pool or farming elsewhere
-- Stake NERI to direct PLI (Protocol Liquidity Incentives) and earn rewards
 
 To understand Mustang Finance it's helpful to understand [Liquity](https://www.liquity.org) 
 

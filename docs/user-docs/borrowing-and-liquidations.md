@@ -165,7 +165,7 @@ In general, those willing to actively monitor their positions, or borrowing for 
 
 ### What could the average interest rate be?
 
-These will be set, continuously, by the market and will vary over time. We would expect that, on average, rates should be similar to borrowing on Sky or Aave using ETH or staked ETH. However, due to the flexibility of user-set rates, it is possible that some users will pay significantly lower rates during certain periods.&#x20;
+These will be set, continuously, by the market and will vary over time. We would expect that, on average, rates should be similar to borrowing on Sky or Aave using ETH. However, due to the flexibility of user-set rates, it is possible that some users will pay significantly lower rates during certain periods.&#x20;
 
 Given that 75% of the interest revenue is directly paid out to USND depositors , we further expect that stablecoin deposit yields should be comparable, if not higher than what competing CDP's and lending markets offer. Thanks to the attractiveness of USND and assuming the emergence of external use cases (monetary premium), this could lead to lower borrow rates overall than offered by other platforms. Learn more about the spread between borrowers and lenders in our [article](https://www.liquity.org/blog/liquity-v2-a-de-facto-reference-rate-for-defi).
 
@@ -226,7 +226,7 @@ If the Stability Pool doesn't cover the full entire debt and gets completely emp
 
 The liquidator can freely choose between two fallback liquidation modes for the debt exceeding the funds in the Stability Pool:
 
-1. Just-in-time (JIT) liquidation: the liquidator sends an amount of USND corresponding to the (remaining) debt in exchange for 105% of its nominal value in (staked) ETH.
+1. Just-in-time (JIT) liquidation: the liquidator sends an amount of USND corresponding to the (remaining) debt in exchange for 105% of its nominal value in ETH.
 2. Redistribution: the liquidator triggers a redistribution, through which the Trove's entire debt and collateral is redistributed to all fellow borrowers of the respective collateral market, in proportion to their own collateral amounts. Thus, the respective borrowers will receive a share of the liquidated collateral and see their debts increase proportionally.
 
 ### Shutdown Borrow Markets
