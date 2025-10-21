@@ -6,7 +6,7 @@ title: Streaming
 Anyone can start streams with USND right now here: https://app.superfluid.org/
 
 
-Nerite has the [Superfluid](https://superfluid.org/) protocol built into it—-USND is a "[pure Super Token](https://docs.superfluid.org/docs/concepts/overview/super-tokens#pure-super-tokens)" that supports streaming. That means you can make real-time, ongoing USND payments. When you open a stream, USND is sent linearly over time until you edit or close the stream with another transaction. You can send $0.000001 per second for two weeks, $5 per month for a year, $100 per hour indefinitely... It's completely up to you. 
+Mustang has the [Superfluid](https://superfluid.org/) protocol built into it—-USND is a "[pure Super Token](https://docs.superfluid.org/docs/concepts/overview/super-tokens#pure-super-tokens)" that supports streaming. That means you can make real-time, ongoing USND payments. When you open a stream, USND is sent linearly over time until you edit or close the stream with another transaction. You can send $0.000001 per second for two weeks, $5 per month for a year, $100 per hour indefinitely... It's completely up to you. 
 
 
 :::tip
@@ -31,5 +31,5 @@ Superfluid streams offer exciting new possibilities for programmable money:
 Are you building one of these? Let our team know--we want to support you!
 
 :::tip
-We are working on several streaming-related features and services built on top of Nerite. 
+We are working on several streaming-related features and services built on top of Mustang. 
 :::

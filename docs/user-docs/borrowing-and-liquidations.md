@@ -4,16 +4,16 @@ sidebar_position: 2
 
 # Borrowing and Liquidations
 
-### What makes borrowing on Nerite so unique?
+### What makes borrowing on Mustang so unique?
 
-Nerite allows users to borrow the stablecoin USND on their own terms. Borrowers can choose and adjust the rate they are willing to pay for their loans. Borrowers can choose to pay 0%, 5%, 20%, etc.. Borrowers will establish market rates in accordance with their individual risk tolerance without relying on governance or algorithm rate management. Each collateral also has its own respective borrow market which allows room for a market of rates to develop.
+Mustang allows users to borrow the stablecoin USND on their own terms. Borrowers can choose and adjust the rate they are willing to pay for their loans. Borrowers can choose to pay 0%, 5%, 20%, etc.. Borrowers will establish market rates in accordance with their individual risk tolerance without relying on governance or algorithm rate management. Each collateral also has its own respective borrow market which allows room for a market of rates to develop.
 
 All of this makes for a highly capital efficient, secure and decentralized borrowing experience.
 
 ### What is a Trove?
 
 When a borrower deposits collateral (ETH, rETH, ARB, etc) a Trove is created.
-A **Trove** is Nerite's version of a 'vault'. Each Trove has a particular Ethereum address owner, and each owner can have multiple Troves.
+A **Trove** is Mustang's version of a 'vault'. Each Trove has a particular Ethereum address owner, and each owner can have multiple Troves.
 
 Each Trove can only have 1 type of collateral deposited in it.
 ```mermaid
@@ -42,9 +42,9 @@ Each Trove allows you to manage a loan, adjusting collateral and debt values as 
 
 Troves are also transferable NFTs, and can be found in the wallet of the owner. Be cautious with this: transferring the NFT also transfers the ownership of the position.
 
-### What types of collateral can I use on Nerite?
+### What types of collateral can I use on Mustang?
 
-Nerite works with the following ten collaterals: 
+Mustang works with the following ten collaterals: 
 - WETH (wrapped Ethereum)
 - wstETH (wrapped Lido ETH)
 - rETH (Rocket pool ETH)
@@ -86,13 +86,13 @@ Please note that these examples are for illustration purposes only and do not re
 If your LTV becomes too high, your position will be liquidated.
 > LTV = Loan to Value a LTV of 50% means that if you borrowed $100, your collateral is $200.
 
-### How do Liquidations work in Nerite?
+### How do Liquidations work in Mustang?
 
-Nerite primarily uses Api3's OEV oracles to prevent value leakage and maintain proper price feeds for our collaterals. Chainlink is also used as a backup in some cases. Check out the [oracles](/docs/technical-documentation/oracles) section for more info.
+Mustang primarily uses Api3's OEV oracles to prevent value leakage and maintain proper price feeds for our collaterals. Chainlink is also used as a backup in some cases. Check out the [oracles](/docs/technical-documentation/oracles) section for more info.
 
 Troves get liquidated if the LTV goes above the maximum value.
 
-Nerite uses Stability Pools as its primary liquidation mechanism to absorb liquidated debt and collateral. Each borrow-market has its own dedicated Stability Pool earning liquidation gains (in the respective collateral) in exchange for burning debt. That means Stability Pool depositors earn 100% of the fees from liquidations on the protocol, and earn those fees in the liquidated collateral (for example, ETH).
+Mustang uses Stability Pools as its primary liquidation mechanism to absorb liquidated debt and collateral. Each borrow-market has its own dedicated Stability Pool earning liquidation gains (in the respective collateral) in exchange for burning debt. That means Stability Pool depositors earn 100% of the fees from liquidations on the protocol, and earn those fees in the liquidated collateral (for example, ETH).
 
 Just-In-Time liquidations and a redistribution of debt and collateral across borrowers of the same market handle liquidations as a last resort if the Stability Pool were ever empty.
 
@@ -125,13 +125,13 @@ To open a new Trove, the protocol requires a liquidation reserve of 0.0375 ETH r
 
 ### How much will I pay for my loan?
 
-On Nerite, there are no upfront fees. Instead, you pay interest on an ongoing basis, making it suitable for short-term loans as well. When creating a new position or increasing the amount borrowed, borrowers pay the first week of interest up front to prevent the protocol from leaking value to arbitrage bots.
+On Mustang, there are no upfront fees. Instead, you pay interest on an ongoing basis, making it suitable for short-term loans as well. When creating a new position or increasing the amount borrowed, borrowers pay the first week of interest up front to prevent the protocol from leaking value to arbitrage bots.
 
 The interest you pay is determined by the rate you set yourself. For example, if you borrow 10,000 USND at a 5% interest rate, you'll pay \~500 USND in interest after one year. This interest is added to your outstanding debt.
 
 ### What are user-set rates?
 
-On Nerite, users set their own interest rates, giving them full control over costs and improving predictability. This feature allows for adaptability to various market conditions and helps stabilize USND's peg.
+On Mustang, users set their own interest rates, giving them full control over costs and improving predictability. This feature allows for adaptability to various market conditions and helps stabilize USND's peg.
 
 User-set interest rates facilitate a capital-efficient equilibrium between USND borrowers and holders in a fully market-driven manner. Additionally, these rates serve as the primary revenue source for USND holders, generating a continuous, sustainable real yield for USND depositors and liquidity providers.
 
@@ -173,7 +173,7 @@ Given that 75% of the interest revenue is directly paid out to USND depositors ,
 
 There are two key parameters to consider:
 
-* **Loan-to-value (LTV)**: This is based on your debt-to-collateral ratio and affects your risk of [liquidation](borrowing-and-liquidations.md#how-do-liquidations-work-in-nerite).
+* **Loan-to-value (LTV)**: This is based on your debt-to-collateral ratio and affects your risk of [liquidation](borrowing-and-liquidations.md#how-do-liquidations-work-in-mustang).
 * **Interest rate (IR)**: You set this rate yourself, and it influences your risk of being [redeemed](/docs/user-docs/redemption-and-delegation#what-are-redemptions).
 
 You have the flexibility to set these parameters as you see fit, allowing you to control the relative riskiness of each Trove. You can create multiple Troves under the same address, enabling you to manage different risk profiles for different portions of your portfolio.
@@ -206,7 +206,7 @@ Make sure you choose a frontend that supports this functionality, and be mindful
 
 Liquity V2 will have three separate borrow markets for the different collateral types with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (ETH, wstETH, and rETH). 
 
-Nerite will have those 3 plus the additional collaterals mentioned above, but all will follow the same immutable patterns.
+Mustang will have those 3 plus the additional collaterals mentioned above, but all will follow the same immutable patterns.
 
 Risks are mitigated through temporary borrowing restrictions in times of low collateralization of a given market, a redemption logic prioritizing  collateral with less Stability Pool backing, and a collateral shutdown as an emergency measure to maintain system balance and protect against market instability.
 

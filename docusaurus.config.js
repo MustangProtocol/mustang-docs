@@ -34,7 +34,7 @@ const config = {
   // may want to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: "en",
-    locales: ["en", "es"],
+    locales: ["en"],
   },
 
   presets: [
@@ -75,10 +75,6 @@ const config = {
             sidebarId: "tutorialSidebar",
             position: "left",
             label: "Docs",
-          },
-          {
-            type: "localeDropdown",
-            position: "left",
           },
           {
             href: "https://github.com/mustangfinance/mustang-docs",

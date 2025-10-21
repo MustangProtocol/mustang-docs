@@ -51,7 +51,7 @@ Mustang Finance is subject to minimal governance which is solely tasked with dis
 
 ## Other Helpful Resources:
 
-Dune Dashboard: https://dune.com/niftyteam/nerite
+Dune Dashboard: https://dune.com/niftyteam/mustang
 
 Supefluid MUST streaming dashboard: https://app.superfluid.org/
 
