@@ -206,7 +206,7 @@ Make sure you choose a frontend that supports this functionality, and be mindful
 
 Liquity V2 will have three separate borrow markets for the different collateral types with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (ETH, wstETH, and rETH). 
 
-Mustang will have those 3 plus the additional collaterals mentioned above, but all will follow the same immutable patterns.
+Mustang will have those 3 plus the additional collaterals mentioned above, but all will follow the same patterns.
 
 Risks are mitigated through temporary borrowing restrictions in times of low collateralization of a given market, a redemption logic prioritizing  collateral with less Stability Pool backing, and a collateral shutdown as an emergency measure to maintain system balance and protect against market instability.
 

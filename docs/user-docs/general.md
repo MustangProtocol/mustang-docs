@@ -20,7 +20,7 @@ To understand Mustang Finance it's helpful to understand [Liquity](https://www.l
 
 
 :::tip
-**Liquity V1** was an immutable lending protocol that allowed users to take 0% interest loans on their ETH to receive $LUSD. Over the past 4 years it proved itself resilient in a variety of market conditions.
+**Liquity V1** was a lending protocol that allowed users to take 0% interest loans on their ETH to receive $LUSD. Over the past 4 years it proved itself resilient in a variety of market conditions.
 
 **Liquity V2** is the next iteration of borrowing, allowing users to set their own interest rate, and use more tokens as collateral.
 :::
@@ -29,8 +29,7 @@ To understand Mustang Finance it's helpful to understand [Liquity](https://www.l
 ### Liquity V1 vs Liquity V2
 | Similarities | Differences  |
 |--|--|
-|Immutability  |  User-set interest rates – more control over your borrowing cost. |
-|Decentralized| New collateral types - ETH, rETH, wstETH|
+|Decentralized  |  User-set interest rates – more control over your borrowing cost. |
 |Rigorous Security|Improved redemption mechanism (lowest borrowing rate is redeemed first)|
 |Redemption of stablecoins for underlying collateral maintains the $1.00 peg no matter what| Troves are now transferable|
 |ETH Mainnet Only|V1’s code was free and open-sourced (FOSS), while with V2, Liquity will have its code set as a business source license (BUSL)|
@@ -38,7 +37,6 @@ To understand Mustang Finance it's helpful to understand [Liquity](https://www.l
 ### Mustang Finance vs Liquity V2
 | Similarities | Differences  |
 |--|--|
-| Immutability|ETH Mainnet (Liquity V2) only vs Arbitrum Only (Mustang Finance) |
 |Decentralization| **Additional Collateral:** sfrxETH, weETH, tETH, tBTC, COMP, and ARB|
 |Redemption of stablecoins for underlying collateral maintains the $1.00 peg no matter what| Mustang Finance adds Streaming: MUST can be streamed at any rate using  [Superfluid](https://www.superfluid.finance/). Pay anyone every second.|
 |Shared Security from Friendly Forks |ARB deposited in the protocol can be delegated by Mustang Finance governance.|

@@ -12,7 +12,6 @@ MUST is the USD-pegged stablecoin issued by the Mustang Finance protocol. It's d
 MUST is a resilient stablecoin by design:
 
 * Only backed by crypto assets ("no real world assets" like US Treasuries)
-* Not subject to collateral changes and protocol upgrades (immutable)
 * Directly redeemable for the underlying assets at any time by any one permissionlessly (always convertible in a fast and liquid way)
 * Can only be created by users depositing more collateral. 
 
@@ -20,7 +19,6 @@ MUST is a resilient stablecoin by design:
 
 * MUST is backed by a variety of LSTs, LRTs, plus ETH, ARB, and COMP.
 * It is always redeemable for the underlying assets, meaning you can always swap it as if worth $1, for the collateral backing it
-* The contracts used to issue MUST are immutable, not allowing any changes and significantly reducing attack vectors
 * MUST has native incentives via Protocol Incentivized Liquidity (PIL) directed by governance, ensuring that there will always be sufficient liquidity to handle transactions
 * MUST is a streamable super-token, making it perfect for subscriptions, money streaming, annuities, and other specialized use cases.
 * MUST is Arbitrum native, and is built specifically for the fast and cheap Arbitrum network.
