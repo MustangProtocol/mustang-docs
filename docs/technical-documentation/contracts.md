@@ -4,201 +4,114 @@ sidebar_position: 1
 
 # Mustang Finance Protocol Contracts
 
-## Prod Deployed Contracts 
+## Prod Deployed Contracts (Saga EVM - Chain ID 5464)
 
 ### Token Contracts
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| USND – $1.00 pegged Stablecoin | [0x4ecf61a6c2fab8a047ceb3b3b263b401763e9d49](https://arbiscan.io/token/0x4ecf61a6c2fab8a047ceb3b3b263b401763e9d49) |
-| yUSND – Yield Bearing USND | [0x252b965400862d94bda35fecf7ee0f204a53cc36](https://arbiscan.io/address/0x252b965400862d94bda35fecf7ee0f204a53cc36)
+
+| Contract Name                  | Address on Saga EVM                        |
+|--------------------------------|--------------------------------------------|
+| MUST – $1.00 pegged Stablecoin | 0x6afc1dc17a4dac310e84100578fa8f0699cd43b9 |
 
 ### Core Contracts
 
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| USND Token | `0x4ecf61a6c2fab8a047ceb3b3b263b401763e9d49` |
-| CollateralRegistry | `0x7f7fbc2711c0d6e8ef757dbb82038032dd168e68` |
-| HintHelpers | `0x07ce30b1672d1ad4c00fc8f091608337e4748625` |
-| MultiTroveGetter | `0xe80bd7c36ad662f1b007dc1b1c490fbf4c47ab88` |
-| ExchangeHelpers | `0xd24246104e2fbbfda5f938d1abdfbbd5a80bf45e` |
-
-### Governance Contracts
-
-Initially, Governance is also set as the InterestRouter. This will be updated in the near future.
-
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| Governance | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
+| Contract Name      | Address on Saga EVM                        |
+|--------------------|--------------------------------------------|
+| MUST Token         | 0x6afc1dc17a4dac310e84100578fa8f0699cd43b9 |
+| CollateralRegistry | 0xbe5d451db7dda764d2a0f1c94cad11a10c5afa85 |
+| HintHelpers        | 0xd4089e6f4c265f4695edf7c1ea423f92ec9603e0 |
+| MultiTroveGetter   | 0x6da0be66951460d517ab6fc407f33d12c4e48a9d |
 
 ### WETH Branch Contracts
 
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0xbb6c6b994409b320e25e7de129e0db5da60ae89b` |
-| BorrowerOperations | `0x46a7cf257e00964c9cec06d9c2b243340d40cc54` |
-| TroveManager | `0x56698cd47d5194c2b7f947ac8370b3cb7359e709` |
-| StabilityPool | `0x9d9ef87a197c1bb3a97b2ddc8716df99079c125e` |
-| ActivePool | `0x9981abdbc8af32f8e660314b3497e4033e15f054` |
-| DefaultPool | `0x991cd0abc6fd0c8eb205194fd37579d32e4bc3d2` |
-| CollSurplusPool | `0x7ad2befac76439320f97d541b5436c635cf5b524` |
-| SortedTroves | `0xf563df24b748f1a0fcb5c6722bdd448d9e8e9e35` |
-| TroveNFT | `0xcaf03527673050580bf29258a790f45b9fe0ecbe` |
-| MetadataNFT | `0xdfd382ccc436b001d4d5851c2267571cd050352b` |
-| PriceFeed | `0x8483efa691ce3f20edcc9f8453f85b64f9872fcb` |
-| GasPool | `0x210f4ccb62a4a1fc9b7c057680618db22babd22f` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| WETHZapper | `0x129524a8638edb4a3dbb741ea3a63b49558f931b` |
-| LeverageZapper | `0xc803389d70fb4627aa62303adc2b833888b04cd8` |
-
-### wstETH Branch Contracts
-
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0x5176fdd77fdef5b7f1edd457d02a8ec1cfebbb34` |
-| BorrowerOperations | `0xec20127b9db56ed02f64bfa1088a6ce4a6757380` |
-| TroveManager | `0xffd282a7184dbbe2e142156a08860f2be994fb98` |
-| StabilityPool | `0xcd94b16e9a126fe61c944b1de024681fcfe05c4b` |
-| ActivePool | `0xfb002caf4d75061959cb40a0b6c294f9b6a86e82` |
-| DefaultPool | `0xc9909dd48c129cdd3951090a8d255b73e4135b15` |
-| CollSurplusPool | `0x61febb593998e77fcf3dee00447338d41b16c3f3` |
-| SortedTroves | `0x41d126a6f56aea65b9de406bd419913ddbd6e549` |
-| TroveNFT | `0xe142db0b8ceb1314bd802488470ed50f476a5531` |
-| MetadataNFT | `0x62709aa9f74182d99f46ead73bca5b42c516a153` |
-| PriceFeed | `0x2148affe49a44a15d6bc71a0a8f302d43cf99d52` |
-| GasPool | `0x5e43e8bb9c2d2bb78d0995687b58b2473b0d57c7` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x6471b1aef6447ce94c32428809adb3d364faf37e` |
-| LeverageZapper | `0x9b5a1ce2a86537f6d9d816c740593425f07755d8` |
+| Contract Name      | Address on Saga EVM                        |
+|--------------------|--------------------------------------------|
+| AddressesRegistry  | 0xbdc590125732dcc2173257e7e75a2b7daf0461e0 |
+| BorrowerOperations | 0x2eddb95d264ac2ef904d970f96c383fd073bab2d |
+| TroveManager       | 0x7a639c9ae64998a1df86d9df13a3d0ba6e94bd51 |
+| StabilityPool      | 0xcf902cecf44a0627f0692669016da682e6737835 |
+| ActivePool         | 0x791747e5f3904b63fbb5a2a3fd02aced0a93b910 |
+| DefaultPool        | 0xe06c6253709e17e0fdfd1f98ad0d05ddec0b18d7 |
+| CollSurplusPool    | 0xa4955748abae174f1a7b1a588fa5fea5bd75ce56 |
+| SortedTroves       | 0xf6e260032ca09beec649e77fb190cd6b04d584a2 |
+| TroveNFT           | 0xffa81b5fc69ab7d183992cfb79142a449aa4b69f |
+| MetadataNFT        | 0x8795403b4d07aa473e842b18557be27c14b0e874 |
+| PriceFeed          | 0x3e4b8ff4b452a42dbd8eef07d0df42e1c173beb5 |
+| GasPool            | 0x95daccc737deca1d1fba1128f9abf7ac9e83d059 |
+| WETHZapper         | 0x3121c3208ff48e5c0b80831b874e5910f81b52e5 |
 
 ### rETH Branch Contracts
 
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0x51253ae341f6dd1c4ff5692de0ee69492743895e` |
-| BorrowerOperations | `0xedc96821fc73f8c0daef9ac4141a316fe2e279dd` |
-| TroveManager | `0x4895d30b7e18b67872a7542d9e876ce444244311` |
-| StabilityPool | `0x47ae276a1cc751ce7b3034d9cbb8cd422968ac35` |
-| ActivePool | `0xbc86903e82cd5d815e595e4a0de9b2b7ba9a2042` |
-| DefaultPool | `0xdeadb62e3f802b2649b7fbd4c31b3189a8380956` |
-| CollSurplusPool | `0x55e2069436f9794b54037d087abf2c70591357a0` |
-| SortedTroves | `0x4a8e48ae0b399ccebb31331692542494c5cac38d` |
-| TroveNFT | `0xd82beb29e6b0c69867bc3d57381464df620af8ef` |
-| MetadataNFT | `0x9ee624f4cf105b93a0136766a25353228e466e71` |
-| PriceFeed | `0x28d0931811b956366f86164d1c088fcbeb0711d5` |
-| GasPool | `0x8ee356be8e272908b453acab7c2eeaad32f86c9c` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x9ccfad2b90672f4d80451d56e2afe5884b36354e` |
-| LeverageZapper | `0x19a9eb1f9c5ef7db9b5583b744d30a62a9da3eed` |
-
-### rsETH Branch Contracts
-
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0xcbf5786902487c1165a98f48ebc65fa0e62739c6` |
-| BorrowerOperations | `0xa5556bcefaa317776fa62fcc30e37502a0f95e30` |
-| TroveManager | `0x8d7b268cc6d33b460428d8e938de26573596bc85` |
-| StabilityPool | `0xafb439c47b3f518a7d8ef3b82f70df30d84e51ee` |
-| ActivePool | `0x268dc0089d71a89800f3f4aaa3f9a7f0a950c7a7` |
-| DefaultPool | `0x5c206487fd6134bf44ef7ebdf25168cb698e4fd6` |
-| CollSurplusPool | `0x957c96eeaa2f1a707e7bef738bd227a4aae6f59d` |
-| SortedTroves | `0xf139a3aff6e42b43614e039cae684ae25d05fd1e` |
-| TroveNFT | `0x2058af96a94b55db19764f564ebac27f6d17a48f` |
-| MetadataNFT | `0x078d56a64ff3c92f999792e56ed74305a90ad097` |
-| PriceFeed | `0x95e9327e6abf146570cd24402bdbcb56a9a5ba8a` |
-| GasPool | `0x7d86a1487341440e3b8d5b286c3b659232933ff4` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x5a6fbd7bb05dbec02d8cd4214ecc48ea1c91cbce` |
-| LeverageZapper | `0x01e3c5831fbd3fc00ff58c7c14daea46183f8a34` |
-
-### weETH Branch Contracts
-
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0xc23928fd7d93ccb61ca60f09311de2dda66c02e4` |
-| BorrowerOperations | `0x9a8ac4d1bdfecb567ce1e4df2d3af357b8330ae0` |
-| TroveManager | `0x76bb92e886d61da119ee8eb3fbcbc722da346550` |
-| StabilityPool | `0x9c3aef8fb9097bb59821422d47f226e35403019a` |
-| ActivePool | `0x7bb26e1e65e41c96bf4b56c6b9037391bcaa04c5` |
-| DefaultPool | `0xcef9257d4579148d30fd19e5f7f40d6ed3d78b73` |
-| CollSurplusPool | `0x512d1b82965f081e1a5dd4cca11541db303031eb` |
-| SortedTroves | `0x3d1037f0e0c62f76c87bc23f047a635b7796f8aa` |
-| TroveNFT | `0x023bd6698c2dc8b8fc9afe92f20ef10c5728ff1f` |
-| MetadataNFT | `0x9c4f0da64bceb125dcf50e1c5929576d72c86651` |
-| PriceFeed | `0x39c2a023b8aed406671a0bed1b02fe548f0d2098` |
-| GasPool | `0xdf9fe29779f8746420de00e9683dae29e54c4240` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x4548b802fd41c783e0aee687273d5a417fefa2ad` |
-| LeverageZapper | `0x724e96e94117a10e9ca5c5af002aa9f5a90c178d` |
-
-### ARB Branch Contracts
-
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0x7900b65266e157d9fce97e92ac3879cb712ded31` |
-| BorrowerOperations | `0xded4b8462220c4b9cc74ed05ad9af192ed2d6e2c` |
-| TroveManager | `0xbdd4ab4128c414520b3669e155b7ecfb348af7f0` |
-| StabilityPool | `0xb2c0460466c8d6384f52cd29db54ee49d01ee84a` |
-| ActivePool | `0xff27f56681613dbd002ee89ec895ec2e39ea8d3a` |
-| DefaultPool | `0x3e25f25a7bc454d98ebe216a279f2bfe3a7b3232` |
-| CollSurplusPool | `0xc743d85a3d59234bed876666676ffec42cc20b1f` |
-| SortedTroves | `0x7516a7b423b3bd866097f68170ea0f128a23ae1b` |
-| TroveNFT | `0x4797893644d92e9a122598403912e20e681a140d` |
-| MetadataNFT | `0xe4f0e33d87bf8fa82914fdf801d2467c27d9ca64` |
-| PriceFeed | `0xc2a8b601947beaf2efe650a39de3e3e0b5c95721` |
-| GasPool | `0x1347e89f5c2b1280f4a450e3660453b71b40c5b9` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x27a2688da49bac2f04f82d0cd916b0f04cf5a52c` |
-| LeverageZapper | `0x1c605810a7036144d6f175d340d5fa1daaa8dcb5` |
-
-### COMP Branch Contracts
-
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0xfe75add51a119e556acd53676b12f865a6737177` |
-| BorrowerOperations | `0x9ce9085d7ca7d1e41f2014fef0f4f6d8ef447e97` |
-| TroveManager | `0xcfc1b1098d53951811210b6b88feb6a8572267fe` |
-| StabilityPool | `0x65b83de0733e237dd3d49a4e9c2868b57ee7d9f0` |
-| ActivePool | `0xc26ff6e1edabafba55ba18854cbc9706b2ec0543` |
-| DefaultPool | `0x1cfb9a5594a4b276c54a0e51f6788fec53a0fd93` |
-| CollSurplusPool | `0x88054d1a22def7d8a624c294a7cd2cf0f713ff09` |
-| SortedTroves | `0xb58bd9dee13cbcbdddb4053195fca662c37a0318` |
-| TroveNFT | `0x85d4613176ad2f7e9b2df9ce07627557a9909d3e` |
-| MetadataNFT | `0x00edf979d29644051777234c4c476036343c3650` |
-| PriceFeed | `0x375bbb7cfc3b438d9d4a0f745569017f47eb55d8` |
-| GasPool | `0x0fd97de40e693f7cd48af0b309ea0847487dbddd` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x6fe92d16bed3ce6c419442d57ab8142cb38bdcf8` |
-| LeverageZapper | `0x0a20361c2327661514988f76432f8c290d47fe7f` |
+| Contract Name      | Address on Saga EVM                        |
+|--------------------|--------------------------------------------|
+| AddressesRegistry  | 0x0265d3576a4a4bd713c3b80e2b6b18ead3c4265f |
+| BorrowerOperations | 0x164d72bbb39a57e265d0c87cb67f20c33185cca7 |
+| TroveManager       | 0x9f479824316c5454529dcf200d3ee31e3ce6eb09 |
+| StabilityPool      | 0x91252d2f16689d65cc11829904dd530df6598306 |
+| ActivePool         | 0x1277c10fe3af0405c69e76b1913ceccb385a79e9 |
+| DefaultPool        | 0x1788d8a9a1f21d81aaa8a2413de58135ac7fa1ab |
+| CollSurplusPool    | 0x3cfa7a160dc7272b08ea722322b3f628a26a9178 |
+| SortedTroves       | 0xfff401554994c7f99e94693990af7d42f55af0ba |
+| TroveNFT           | 0x92f22f3bb7b88c6993d9b2df94bcb890059293bd |
+| MetadataNFT        | 0x15e8d3c51cf8759b15690bd2cfd39d1b02116dcd |
+| PriceFeed          | 0x0bf89c4e40b163fe0364acebb893c7227816f196 |
+| GasPool            | 0x17f0f9e92b1b7529eed3b6cd14274a26909c2cbb |
+| GasCompZapper      | 0x069ba7cb9ca94cde694387b206abd30e890d7528 |
 
 ### tBTC Branch Contracts
 
-| Contract Name | Address on Arbitrum |
-|---------------|---------------------|
-| AddressesRegistry | `0xf329fb0e818bd92395785a4f863636bc0d85e1df` |
-| BorrowerOperations | `0x5dd68bcd530eacad631734132574587aed25eb4f` |
-| TroveManager | `0x285b3d3813d7a132d3f1ab48bb5a585e1363cdeb` |
-| StabilityPool | `0xe1fa1f28a67a8807447717f51bf3305636962126` |
-| ActivePool | `0x620fe90b1eacaea936ea199e7b05f998ca65836a` |
-| DefaultPool | `0x72f6c60a3923eca9ab15ac1786a5abd280a92b47` |
-| CollSurplusPool | `0x3c140cbf0ed6594cd9e370d5aa53bee044a07df8` |
-| SortedTroves | `0x4e6e9606577fc36834e356650ff682c872781872` |
-| TroveNFT | `0x18b91eff8f65c6ed0bfe22003b4e239310108ee5` |
-| MetadataNFT | `0xce492d1fa68a2788ea98168d9f80e48b0343baf4` |
-| PriceFeed | `0x993d4ed0ec1936bd86d765666dfb96bef6fdad10` |
-| GasPool | `0xafaa4a10d7878c13e802e11fcbdb75f25f278ce6` |
-| InterestRouter | `0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d` |
-| GasCompZapper | `0x3cf201d9b789b0d4bef12b249a43e5c520ee3ae4` |
-| LeverageZapper | `0x5d5b129a3d2fc95589006df0d8f513440489eec5` |
+| Contract Name      | Address on Saga EVM                        |
+|--------------------|--------------------------------------------|
+| AddressesRegistry  | 0x4d20d8dae0ed4d1a14ed6a42408e129c3749ac07 |
+| BorrowerOperations | 0xbfcfd53c810dc9fbc7fb237fac70b2d8eae8e5cc |
+| TroveManager       | 0x2f323070f32858330ac2291b8ce921228bd2b2c6 |
+| StabilityPool      | 0x5259f6e3d48a2d8a228678acf01dbd4c8875b3ed |
+| ActivePool         | 0x7440a104a0eaad49cf2f002e3e60cbed74d672e0 |
+| DefaultPool        | 0x2cf05b84ae88aa72834731e5b1a9cc25cf894670 |
+| CollSurplusPool    | 0xadf99b0ad9b822effd896899142a684c34a64b7a |
+| SortedTroves       | 0x7d0975fd02df6af2613d26b2909263c2a9b6e87c |
+| TroveNFT           | 0x889e3c67c74f0192f8b3b9f53b4414f4b06d7fcd |
+| MetadataNFT        | 0xfd88bca35fd64e2640ac521c238de6b7e6b41a29 |
+| PriceFeed          | 0xe6db69a02f2044efb9952a4197db7f9f3f7da135 |
+| GasPool            | 0x9b01df231fa3377737a204737930f3ea6064d360 |
+| GasCompZapper      | 0xed871ea195a059e4a596a21b9ea3f4038b3313e2 |
+
+### SAGA Branch Contracts
+
+| Contract Name      | Address on Saga EVM                        |
+|--------------------|--------------------------------------------|
+| AddressesRegistry  | 0xf68f61b25ba43c554820ccaf8d88594cb408ebaa |
+| BorrowerOperations | 0xa89f6f6d3436348d5d01341ff5e456dc299a1a46 |
+| TroveManager       | 0xd4a0bfd801c6d8a22393bd596b5ef60881d57680 |
+| StabilityPool      | 0xba8f09ab2b255063b55a00bcd19e61207fc587c2 |
+| ActivePool         | 0xcd96e0ee51e1f75b8ceb59cfbdfaae84a06c8dbf |
+| DefaultPool        | 0xb56c7d5d52f0b280296466c4a3d09df8e1154a18 |
+| CollSurplusPool    | 0xdc83131e20cce000dd40e482203b0ffc833f63e5 |
+| SortedTroves       | 0x0ffef436e4893a26484816352950d7751624b4fb |
+| TroveNFT           | 0x7818dfb5c0fb0dc584d8f5e3bc3024822a63c48c |
+| MetadataNFT        | 0xe1ab7363ec02b9085cd711ec65723fdc9f90770f |
+| PriceFeed          | 0x146eb2ffa92145133dbf4ad627af58adbc47cd87 |
+| GasPool            | 0x5a1fafd78539cbe63f21d7d03dce6c35345d0183 |
+| GasCompZapper      | 0xde7d70349661f420ebe3eaea582f0fdc106c6f74 |
 
 ### Collateral Token Addresses
 
-| Collateral | Symbol | Address on Arbitrum |
-|------------|--------|---------------------|
-| Wrapped Ether | WETH | `0x82af49447d8a07e3bd95bd0d56f35241523fbab1` |
-| Wrapped Staked ETH | wstETH | `0x5979d7b546e38e414f7e9822514be443a4800529` |
-| Rocket Pool ETH | rETH | `0xec70dcb4a1efa46b8f2d97c310c9c4790ba5ffa8` |
-| Kelp DAO Restaked ETH | rsETH | `0x4186bfc76e2e237523cbc30fd220fe055156b41f` |
-| Wrapped Etherfi Staked ETH | weETH | `0x35751007a407ca6feffe80b3cb397736d2cf4dbe` |
-| Arbitrum | ARB | `0x912ce59144191c1204e64559fe8253a0e49e6548` |
-| Compound | COMP | `0x354a6da3fcde098f8389cad84b0182725c6c91de` |
-| Bitcoin | tBTC | `0x6c84a8f1c29108f47a79964b5fe888d4f4d0de40` |
+| Collateral      | Symbol | Address on Saga EVM                        | MCR  |
+|-----------------|--------|--------------------------------------------|------|
+| Wrapped Ether   | WETH   | 0xeb41D53F14Cb9a67907f2b8b5DBc223944158cCb | 110% |
+| Rocket Pool ETH | rETH   | 0x679121f168488185eca6Aaa3871687FF6d38Edb6 | 120% |
+| Threshold BTC   | tBTC   | 0xa740E6758e309840ffFfe58f749F018386A3b70b | 120% |
+| Wrapped SAGA    | SAGA   | 0x1e34Fb2A338142A501AFf776Da2AD8d919272320 | 140% |
+
+### Oracle Addresses
+
+| Oracle          | Address on Saga EVM                        | Staleness Threshold |
+|-----------------|--------------------------------------------|---------------------|
+| ETH/USD Oracle  | 0x0cD65ca12F6c9b10254FABC0CC62d273ABbb3d84 | 25 hours            |
+| rETH/ETH Oracle | 0x7B1be2C7B390A1FA29e07504f2a46A8Dc07eD9F4 | 25 hours            |
+| tBTC/ETH Oracle | 0x9494Ed94280E9A8c5b52B1cDa9Ac9D21f6307135 | 25 hours            |
+| BTC/USD Oracle  | 0x4a397383fE5FbE9AB33879869153fF40ea68815F | 25 hours            |
+| SAGA/USD Oracle | 0xaA43df021149C34ca3654F387C9aeB9AcABa012a | 25 hours            |
+
+---
+
+**Note:** Mustang Finance is deployed on Saga EVM (Chain ID: 5464). The protocol supports four collateral types: WETH (110% MCR), rETH (120% MCR), tBTC (120% MCR), and SAGA (140% MCR). Each collateral has its own branch with dedicated contracts for managing troves, stability pools, and gas compensation.
