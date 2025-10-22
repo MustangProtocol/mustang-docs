@@ -47,8 +47,8 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Learn about the Mustang Finance protocol.">
+      title={`${siteConfig.title} Documentation`}
+      description="Learn about Mustang Finance.">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

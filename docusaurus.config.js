@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Mustang Finance Protocol Documentation",
-  tagline: "CDP for the open range.",
+  tagline: "Your CDP for the open range.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
