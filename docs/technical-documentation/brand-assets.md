@@ -6,6 +6,6 @@ sidebar_position: 5
 
 Official Mustang Finance brand assets and usage guidelines.
 
-All assets are available here. Everything is MIT licensed *except* for things in the cute snails folder.
+All assets are available here and are MIT licensed.
 
 https://github.com/mustangfinance/assets 

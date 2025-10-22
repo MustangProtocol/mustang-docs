@@ -20,7 +20,7 @@ Mustang Finance audits:
 ## Centralization Risk
 
 ### Mustang Finance Governance
-Mustang Finance Protocol is designed to be as limited, decentralized, and immutable as possible. The only parameters in the protocol which can be updated or changed by Mustang Finance governance are:
+Mustang Finance Protocol is designed to be as limited and decentralized as possible. The only parameters in the protocol which can be updated or changed by Mustang Finance governance are:
 1. Debt limits for each collateral type, which can be lowered at any time but only raised by a factor of 2x with a 7 day timelock.
 2. How to direct 25% of protocol revenue. 
 

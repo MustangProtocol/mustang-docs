@@ -4,8 +4,26 @@
  * work well for content-centric websites.
  */
 
+/* Font faces */
+@font-face {
+  font-family: 'Geist';
+  src: url('/fonts/GeistVF.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  src: url('/fonts/GeistMonoVF.woff') format('woff');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
 /* You can override the default Infima variables here. */
 :root {
+  --ifm-font-family-base: 'Geist', system-ui, -apple-system, sans-serif;
+  --ifm-heading-font-family: 'Geist', system-ui, -apple-system, sans-serif;
+  --ifm-font-family-monospace: 'Geist Mono', 'SFMono-Regular', Menlo, Monaco, Consolas, monospace;
   --ifm-color-primary: #8bb2b7;
   --ifm-color-primary-dark: #29784c;
   --ifm-color-primary-darker: #277148;

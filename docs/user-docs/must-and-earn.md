@@ -12,7 +12,6 @@ MUST is the USD-pegged stablecoin issued by the Mustang Finance protocol. It's d
 MUST is a resilient stablecoin by design:
 
 * Only backed by crypto assets ("no real world assets" like US Treasuries)
-* Not subject to collateral changes and protocol upgrades (immutable)
 * Directly redeemable for the underlying assets at any time by any one permissionlessly (always convertible in a fast and liquid way)
 * Can only be created by users depositing more collateral. 
 
@@ -20,7 +19,6 @@ MUST is a resilient stablecoin by design:
 
 * MUST is backed by a variety of LSTs, LRTs, plus ETH, ARB, and COMP.
 * It is always redeemable for the underlying assets, meaning you can always swap it as if worth $1, for the collateral backing it
-* The contracts used to issue MUST are immutable, not allowing any changes and significantly reducing attack vectors
 * MUST has native incentives via Protocol Incentivized Liquidity (PIL) directed by governance, ensuring that there will always be sufficient liquidity to handle transactions
 * MUST is a streamable super-token, making it perfect for subscriptions, money streaming, annuities, and other specialized use cases.
 * MUST is Arbitrum native, and is built specifically for the fast and cheap Arbitrum network.
@@ -37,8 +35,7 @@ In contrast, when MUST trades below $1, arbitrageurs will initiate redemptions t
 ### How can I earn yield with Mustang Finance?
 
 * Stability Pool deposits (Earn): Earn protocol revenue by depositing MUST into the various Stability Pools.
-* Protocol Incentivized Liquidity (PIL): Supply liquidity for MUST onto the incentivized external DEXes like Bunni and Camelot. 
-* Stake NERI (coming soon): Accrue voting power over liquidity incentives by staking NERI. On top of directing revenue, NERI stakers can potentially receive bribes (subject to governance vote) from third parties as an added bonus.
+* Protocol Incentivized Liquidity (PIL): Supply liquidity for MUST onto the incentivized external DEXes like Bunni and Camelot.
 
 Users can also use "set-and-forget" strategies, like depositing MUST into the Yearn managed [yMUST vault](https://app.must.finance/earn/ymust). This vault aggigates yield between all the  stability pools and is recommended for users looking for the simplest MUST strategy. It issues the [yMUST token](https://arbiscan.io/address/0x252b965400862d94bda35fecf7ee0f204a53cc36), which is a yield bearing version of MUST.
 ![yUSNDvault](/img/yUSNDvault.png)
@@ -48,7 +45,7 @@ Users can also use "set-and-forget" strategies, like depositing MUST into the Ye
 The yield comes from three sources:
 
 1. **Interest payments**: Each borrow-market funnels 75% of the of its revenue to its Stability Pool depositors (Earners). This is paid out in MUST.
-2. **Liquidation fees**: Your MUST will be used to liquidate under-collateralized loans, effectively buying their collateral with a \~5% discount. This is paid out in (staked) ETH.
+2. **Liquidation fees**: Your MUST will be used to liquidate under-collateralized loans, effectively buying their collateral with a \~5% discount. This is paid out in ETH.
 3. **Inflationary Incentives**: NERI tokens are added as a bonus inflationary reward to depositors.
 
 All the yield is fully sustainable, scalable and "real", with no token emissions and lockups.
@@ -72,7 +69,7 @@ The goals are to:
 
 ### How have Stability Pools evolved in Liquity based systems like Mustang Finance, from Liquity V1 to V2?
 
-In V2, the concept of Stability Pools is expanded to accommodate multiple Liquid Staking Tokens (LSTs), Vanguard crypto tokens, as well as ETH as collateral, and keeping the interest revenue and liquidations proceeds inside the respective borrow market (collateral). Each collateral asset thus has its own Stability Pool to distribute yield to MUST depositors.
+In V2, the concept of Stability Pools is expanded to accommodate multiple collateral types, keeping the interest revenue and liquidations proceeds inside the respective borrow market (collateral). Each collateral asset thus has its own Stability Pool to distribute yield to MUST depositors.
 
 Additionally, user-set interest rates in V2 influence the yield dynamics for  Stability Pools depositors (Earn) as the yield is now fully sustainable coming from user-set interest rates (in MUST) rather than token emissions.
 

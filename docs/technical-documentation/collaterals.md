@@ -4,7 +4,7 @@ sidebar_position: 6
 
 # Collateral Parameters
 
-[Checkout out this blog](https://www.nerite.org/writing/tech-talk-collateral-ratios) on how various collateral ratio systems work.
+[Checkout out this blog](https://www.mustangfinance.org/writing/tech-talk-collateral-ratios) on how various collateral ratio systems work.
 
 MCR is the primary requirement for each trove, but there are also overall global requirements for each branch.
 
