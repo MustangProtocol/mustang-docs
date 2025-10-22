@@ -19,9 +19,6 @@ The ReadMe also has more design and architecture information.
 ### Delegation
 `ActivePool.sol` now has `delegateTokens` funtion. Any tokens can be delegated to the `delegate` role. The role can be update by `governance`, which is the DAO of NERI holders. Anyone can call delegate function safely since it always delegates to the `delegate` role.
 
-### Superfluid
-Bold token (which is renamed ), is now streamable via custom streaming token using this library: (https://www.npmjs.com/package/@superfluid-finance/ethereum-contracts)
-
 _mint, _burn, _transfer functions have been replaced with selfMint, selfBurn, and selfTransfer from the [superfluid supertoken](https://github.com/superfluid-finance/protocol-monorepo/blob/dev/packages/ethereum-contracts/contracts/superfluid/SuperToken.sol).
 
 BoldToken is no longer an ERC-20 on its own, but rather a proxy which is initalized into an ERC-20. Many deployment changes as a result. Dev note: do not use deal() cheatcode with boldToken in testing, since the memory is not stored how foundry expects.

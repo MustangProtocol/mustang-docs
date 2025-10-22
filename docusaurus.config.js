@@ -11,7 +11,7 @@ import { themes as prismThemes } from "prism-react-renderer";
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Mustang Finance Protocol Documentation",
-  tagline: "CDP for the open range.",
+  tagline: "Your CDP for the open range.",
   favicon: "img/favicon.ico",
 
   // Set the production url of your site here
@@ -119,10 +119,7 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "DAO Dashboard",
-                href: "https://app.aragon.org/#/daos/arbitrum/0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d/dashboard",
-              },
+              
             ],
           },
         ],

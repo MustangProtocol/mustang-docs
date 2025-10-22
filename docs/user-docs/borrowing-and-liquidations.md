@@ -44,19 +44,13 @@ Troves are also transferable NFTs, and can be found in the wallet of the owner. 
 
 ### What types of collateral can I use on Mustang?
 
-Mustang works with the following ten collaterals: 
-- WETH (wrapped Ethereum)
-- wstETH (wrapped Lido ETH)
-- rETH (Rocket pool ETH)
-- rsETH (Kelp ETH)
-- weETH (Etherfi ETH) 
-- tETH (Treehouse ETH)
-- ARB (Arbitrum) 
-- COMP (Compound Finance)
+Mustang works with the following collaterals: 
+- WETH (wrapped Ether)
+- rsETH (Kelp Ether)
 - tBTC (Threshold Bitcoin)
 
 :::tip
-New collateral types can never be added. But existing ones can be removed, or re-added, based on risk factors. 
+New collateral types can be added by governance. Existing ones can be removed, although users will always have the ability to withdraw their positions in the case of a collateral being removed. 
 :::
 
 ### Is there a minimum debt?

@@ -5,6 +5,11 @@
 .docusaurus
 .cache-loader
 
+# Build outputs
+/build
+/dist
+/out
+
 # Misc
 .DS_Store
 .env.local
