@@ -28,8 +28,8 @@ New collateral types can NOT be added by Mustang Finance governance.
 MUST can NEVER be minted by Mustang Finance governance.
 The percentage of fees that are directed to the stability pool can NOT be changed by Mustang Finance governance.
 
-### Arbitrum Network
-Arbitrum is a decentralized network, but still relies on an emergency upgrade mechanism. For more information on this, see the [L2 Beat](https://l2beat.com/scaling/projects/arbitrum) tracker for Arbitrum decentralization.
+### Saga EVM Network
+Mustang is depdent on the security of Saga. If there is ever a critical issue with Saga EVM or other Saga infrastructure that could effect the safety of Mustang.
 
 ### Collaterals
 

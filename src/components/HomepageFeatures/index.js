@@ -14,11 +14,11 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate id="feature.streamable.title">Scalable</Translate>,
+    title: <Translate id="feature.streamable.title">Saga Native</Translate>,
     Svg: require('@site/img/purple_no_bg.png').default,
     description: (
       <>
-        <Translate id="feature.streamable.desc">MUST is a streaming super-token stablecoin built with the Superfluid protocol.</Translate>
+        <Translate id="feature.streamable.desc">MUST is built natively for the Saga EVM.</Translate>
       </>
     ),
   },

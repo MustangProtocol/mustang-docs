@@ -119,10 +119,7 @@ const config = {
           {
             title: "More",
             items: [
-              {
-                label: "DAO Dashboard",
-                href: "https://app.aragon.org/#/daos/arbitrum/0x108f48e558078c8ef2eb428e0774d7ecd01f6b1d/dashboard",
-              },
+              
             ],
           },
         ],
