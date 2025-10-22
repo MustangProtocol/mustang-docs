@@ -61,7 +61,7 @@ New collateral types can never be added. But existing ones can be removed, or re
 
 ### Is there a minimum debt?
 
-Yes, a minimum debt of 500 USND is required for borrowing.
+Yes, a minimum debt of 200 USND is required for borrowing.
 
 ### **When do I need to pay back my loan?**
 
