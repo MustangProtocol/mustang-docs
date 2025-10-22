@@ -14,7 +14,7 @@ const FeatureList = [
     ),
   },
   {
-    title: <Translate id="feature.streamable.title">Streamable</Translate>,
+    title: <Translate id="feature.streamable.title">Scalable</Translate>,
     Svg: require('@site/img/purple_no_bg.png').default,
     description: (
       <>

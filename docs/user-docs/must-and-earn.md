@@ -20,7 +20,6 @@ MUST is a resilient stablecoin by design:
 * MUST is backed by a variety of LSTs, LRTs, plus ETH, ARB, and COMP.
 * It is always redeemable for the underlying assets, meaning you can always swap it as if worth $1, for the collateral backing it
 * MUST has native incentives via Protocol Incentivized Liquidity (PIL) directed by governance, ensuring that there will always be sufficient liquidity to handle transactions
-* MUST is a streamable super-token, making it perfect for subscriptions, money streaming, annuities, and other specialized use cases.
 * MUST is Arbitrum native, and is built specifically for the fast and cheap Arbitrum network.
 
 ### What is MUST's peg mechanism?
