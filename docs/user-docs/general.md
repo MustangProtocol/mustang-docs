@@ -69,3 +69,6 @@ https://goldsky.com/products/subgraphs
 
 Squid Router for bridging to Saga EVM from anywhere:
 https://app.squidrouter.com/
+
+Current Saga-EVM Tellor Price Feeds:
+https://saga-tellor-pricefeeds.vercel.app/
