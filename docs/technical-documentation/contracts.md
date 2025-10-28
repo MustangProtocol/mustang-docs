@@ -10,13 +10,13 @@ sidebar_position: 1
 
 | Contract Name                  | Address on Saga EVM                        |
 |--------------------------------|--------------------------------------------|
-| MUST – $1.00 pegged Stablecoin | 0x6afc1dc17a4dac310e84100578fa8f0699cd43b9 |
+| MUST – $1.00 pegged Stablecoin | 0x827e3a34e3e078dc103b11284de68fb5a8ddbe49 |
 
 ### Core Contracts
 
 | Contract Name      | Address on Saga EVM                        |
 |--------------------|--------------------------------------------|
-| MUST Token         | 0x6afc1dc17a4dac310e84100578fa8f0699cd43b9 |
+| MUST Token         | 0x827e3a34e3e078dc103b11284de68fb5a8ddbe49 |
 | CollateralRegistry | 0xbe5d451db7dda764d2a0f1c94cad11a10c5afa85 |
 | HintHelpers        | 0xd4089e6f4c265f4695edf7c1ea423f92ec9603e0 |
 | MultiTroveGetter   | 0x6da0be66951460d517ab6fc407f33d12c4e48a9d |
@@ -38,24 +38,6 @@ sidebar_position: 1
 | PriceFeed          | 0x3e4b8ff4b452a42dbd8eef07d0df42e1c173beb5 |
 | GasPool            | 0x95daccc737deca1d1fba1128f9abf7ac9e83d059 |
 | WETHZapper         | 0x3121c3208ff48e5c0b80831b874e5910f81b52e5 |
-
-### rETH Branch Contracts
-
-| Contract Name      | Address on Saga EVM                        |
-|--------------------|--------------------------------------------|
-| AddressesRegistry  | 0x0265d3576a4a4bd713c3b80e2b6b18ead3c4265f |
-| BorrowerOperations | 0x164d72bbb39a57e265d0c87cb67f20c33185cca7 |
-| TroveManager       | 0x9f479824316c5454529dcf200d3ee31e3ce6eb09 |
-| StabilityPool      | 0x91252d2f16689d65cc11829904dd530df6598306 |
-| ActivePool         | 0x1277c10fe3af0405c69e76b1913ceccb385a79e9 |
-| DefaultPool        | 0x1788d8a9a1f21d81aaa8a2413de58135ac7fa1ab |
-| CollSurplusPool    | 0x3cfa7a160dc7272b08ea722322b3f628a26a9178 |
-| SortedTroves       | 0xfff401554994c7f99e94693990af7d42f55af0ba |
-| TroveNFT           | 0x92f22f3bb7b88c6993d9b2df94bcb890059293bd |
-| MetadataNFT        | 0x15e8d3c51cf8759b15690bd2cfd39d1b02116dcd |
-| PriceFeed          | 0x0bf89c4e40b163fe0364acebb893c7227816f196 |
-| GasPool            | 0x17f0f9e92b1b7529eed3b6cd14274a26909c2cbb |
-| GasCompZapper      | 0x069ba7cb9ca94cde694387b206abd30e890d7528 |
 
 ### tBTC Branch Contracts
 
@@ -95,23 +77,32 @@ sidebar_position: 1
 
 ### Collateral Token Addresses
 
-| Collateral      | Symbol | Address on Saga EVM                        | MCR  |
-|-----------------|--------|--------------------------------------------|------|
-| Wrapped Ether   | WETH   | 0xeb41D53F14Cb9a67907f2b8b5DBc223944158cCb | 110% |
-| Rocket Pool ETH | rETH   | 0x679121f168488185eca6Aaa3871687FF6d38Edb6 | 120% |
-| Threshold BTC   | tBTC   | 0xa740E6758e309840ffFfe58f749F018386A3b70b | 120% |
-| Wrapped SAGA    | SAGA   | 0x1e34Fb2A338142A501AFf776Da2AD8d919272320 | 140% |
+| Collateral      | Symbol | Address on Saga EVM                        | MCR  | Status   |
+|-----------------|--------|--------------------------------------------|------|----------|
+| Wrapped Ether   | WETH   | 0xeb41D53F14Cb9a67907f2b8b5DBc223944158cCb | 110% | Active   |
+| Threshold BTC   | tBTC   | 0xa740E6758e309840ffFfe58f749F018386A3b70b | 120% | Active   |
+| Wrapped SAGA    | SAGA   | 0x1e34Fb2A338142A501AFf776Da2AD8d919272320 | 140% | Active   |
+| Staked ATOM     | stATOM | 0xDaF9d9032b5d5C92528d6aFf6a215514B7c21056 | 120% | Upcoming |
+| KING            | KING   | 0x8f08b70456eb22f6109f57b8fafe862ed28e6040 (Ethereum) | 160% | Planned  |
+| Yearn ETH       | yETH   | 0x8464f6ecae1ea58ec816c13f964030eab8ec123a (Ethereum) | 120% | Planned  |
 
-### Oracle Addresses
+### Oracle Addresses (Tellor)
 
-| Oracle          | Address on Saga EVM                        | Staleness Threshold |
-|-----------------|--------------------------------------------|---------------------|
-| ETH/USD Oracle  | 0x0cD65ca12F6c9b10254FABC0CC62d273ABbb3d84 | 25 hours            |
-| rETH/ETH Oracle | 0x7B1be2C7B390A1FA29e07504f2a46A8Dc07eD9F4 | 25 hours            |
-| tBTC/ETH Oracle | 0x9494Ed94280E9A8c5b52B1cDa9Ac9D21f6307135 | 25 hours            |
-| BTC/USD Oracle  | 0x4a397383fE5FbE9AB33879869153fF40ea68815F | 25 hours            |
-| SAGA/USD Oracle | 0xaA43df021149C34ca3654F387C9aeB9AcABa012a | 25 hours            |
+**DataBank Address (shared):** `0x6f250229af8D83c51500f3565b10E93d8907B644`
+
+| Oracle Type    | Address on Saga EVM                        | Heartbeat | Price Threshold | Status   |
+|----------------|--------------------------------------------|-----------|-----------------|----------|
+| ETH/USD        | 0xf568a35f0D1D4C0a389bB29033a0f13E02536D62 | 4 hours   | 1.00%           | Active   |
+| tBTC/USD       | 0x987fc3b27226427323EFDB73E713669cf87B588c | 4 hours   | 2.00%           | Active   |
+| SAGA/USD       | 0xB4eA7fc3359E390CADcee542bDbd34caB89E64f0 | 4 hours   | 2.00%           | Active   |
+| stATOM/USD     | 0x457fC8f0D3E7319eb078E076afD3F49120Bd0c4a | 4 hours   | 2.00%           | Upcoming |
+| KING/USD       | 0x54cb7d1c225100B05720d37735316BF16D885496 | 4 hours   | 2.00%           | Planned  |
+| yETH/USD       | 0xE087D1936257444ec4bc34caD95cA58EE0129a7e | 4 hours   | 2.00%           | Planned  |
+
+:::tip
+All oracles have a 5-hour staleness threshold (4-hour heartbeat + 1-hour buffer).
+:::
 
 ---
 
-**Note:** Mustang Finance is deployed on Saga EVM (Chain ID: 5464). The protocol supports four collateral types: WETH (110% MCR), rETH (120% MCR), tBTC (120% MCR), and SAGA (140% MCR). Each collateral has its own branch with dedicated contracts for managing troves, stability pools, and gas compensation.
+**Note:** Mustang Finance is deployed on Saga EVM (Chain ID: 5464). The protocol currently supports three active collateral types: WETH (110% MCR), tBTC (120% MCR), and SAGA (140% MCR), with stATOM (120% MCR) coming soon and KING (160% MCR) and yETH (120% MCR) planned for future deployment. Each collateral has its own branch with dedicated contracts for managing troves, stability pools, and gas compensation. All oracles are powered by Tellor with 4-hour heartbeats.

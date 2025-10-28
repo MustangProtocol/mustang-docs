@@ -12,7 +12,7 @@ All of this makes for a highly capital efficient, secure and decentralized borro
 
 ### What is a Trove?
 
-When a borrower deposits collateral (ETH, rETH, ARB, etc) a Trove is created.
+When a borrower deposits collateral (WETH, tBTC, SAGA, etc) a Trove is created.
 A **Trove** is Mustang's version of a 'vault'. Each Trove has a particular Ethereum address owner, and each owner can have multiple Troves.
 
 Each Trove can only have 1 type of collateral deposited in it.
@@ -45,9 +45,17 @@ Troves are also transferable NFTs, and can be found in the wallet of the owner. 
 ### What types of collateral can I use on Mustang?
 
 Mustang works with the following collaterals: 
-- WETH (wrapped Ether)
+- WETH (Wrapped Ether)
 - rsETH (Kelp Ether)
 - tBTC (Threshold Bitcoin)
+- SAGA (Wrapped SAGA)
+
+**Upcoming Collaterals:**
+- stATOM (Staked ATOM) - Deployment pending
+
+**Planned Future Collaterals:**
+- KING
+- yETH (Yearn ETH)
 
 :::tip
 New collateral types can be added by governance. Existing ones can be removed, although users will always have the ability to withdraw their positions in the case of a collateral being removed. 
@@ -82,7 +90,7 @@ If your LTV becomes too high, your position will be liquidated.
 
 ### How do Liquidations work in Mustang?
 
-Mustang primarily uses Api3's OEV oracles to prevent value leakage and maintain proper price feeds for our collaterals. Chainlink is also used as a backup in some cases. Check out the [oracles](/docs/technical-documentation/oracles) section for more info.
+Mustang uses Tellor oracles to maintain proper price feeds for our collaterals. Check out the [oracles](/docs/technical-documentation/oracles) section for more info.
 
 Troves get liquidated if the LTV goes above the maximum value.
 
@@ -94,8 +102,9 @@ A liquidated borrower usually incurs a penalty of 5% and will be able to claim t
 
 A special case is when a Redistribution is necessary, then:
 
-* For ETH, the loss amounts to 10% of the debt (at most). That corresponds to a max. loss of 9.09% expressed in terms of collateral.
-* For rETH/wstETH the loss is 20% of the debt, corresponding to a max. loss of 16.67% expressed in terms of collateral.
+* For WETH, the loss amounts to 10% of the debt (at most). That corresponds to a max. loss of 9.09% expressed in terms of collateral.
+* For tBTC/stATOM the loss is 20% of the debt, corresponding to a max. loss of 16.67% expressed in terms of collateral.
+* For SAGA the loss is higher due to increased volatility risk.
 
 ![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FhaTvXYC1FTrAwmfXQZ14%252Fliqtable.png%3Falt%3Dmedia%26token%3Da2ab7753-5fd6-4741-8c43-871fc704aa1a&width=768&dpr=4&quality=100&sign=fba442d0&sv=2)
 
@@ -103,15 +112,20 @@ A special case is when a Redistribution is necessary, then:
 
 The liquidation of Troves is connected with certain gas costs which the initiator has to cover. The protocol offers a gas compensation given by the following formula:
 
-`0.0375 WETH + min(0.5% trove_collateral, 2_units_of_LST_or_WETH)`
+`0.0375 WETH + min(0.5% trove_collateral, 2_units_of_collateral)`
 
-The `0.0375 WETH` is funded by a [refundable gas deposit](borrowing-and-liquidations.md#what-is-the-refundable-gas-deposit) while the variable `0.5%` part comes from the liquidated collateral, slightly reducing the liquidation gain for Stability Providers.
+The `0.0375 WETH` equivalent is funded by a [refundable gas deposit](borrowing-and-liquidations.md#what-is-the-refundable-gas-deposit) while the variable `0.5%` part comes from the liquidated collateral, slightly reducing the liquidation gain for Stability Providers. The specific gas compensation varies by collateral type (e.g., 2 tBTC on the tBTC branch, 2 stATOM on the stATOM branch).
 
 ### What is the max Loan-To-Value (LTV)?
 
-That depends on the collateral type you will use.&#x20;
+That depends on the collateral type you will use:
 
-ETH will have a LTV of 90.91% while wstETH and rETH will have it at 83.33%.
+- WETH: 90.91% LTV (110% MCR)
+- tBTC: 83.33% LTV (120% MCR)
+- SAGA: 71.43% LTV (140% MCR)
+- stATOM (upcoming): 83.33% LTV (120% MCR)
+- KING (planned): 62.5% LTV (160% MCR)
+- yETH (planned): 83.33% LTV (120% MCR)
 
 ### What is the refundable gas deposit?
 
@@ -192,27 +206,25 @@ Please note that more advanced strategies like 'selling' Troves on secondary mar
 
 ### How do I loop my exposure?
 
-Looping allows you to borrow USND against your deposited collateral (ETH, wstETH or rETH) and use it to buy more collateral, increasing your exposure to the underlying . Liquity V2 comes with built-in automation to achieve this with one click (zappers).&#x20;
+Looping allows you to borrow MUST against your deposited collateral (WETH, tBTC, or SAGA) and use it to buy more collateral, increasing your exposure to the underlying asset. Mustang Finance has built-in automation to achieve this with one click (zappers).
 
 Make sure you choose a frontend that supports this functionality, and be mindful of liquidity/slippage.
 
 ### How are collateral risks mitigated?
 
-Liquity V2 will have three separate borrow markets for the different collateral types with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (ETH, wstETH, and rETH). 
-
-Mustang will have those 3 plus the additional collaterals mentioned above, but all will follow the same patterns.
+Mustang Finance has separate borrow markets for each collateral type with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (WETH, tBTC, SAGA, and upcoming stATOM).
 
 Risks are mitigated through temporary borrowing restrictions in times of low collateralization of a given market, a redemption logic prioritizing  collateral with less Stability Pool backing, and a collateral shutdown as an emergency measure to maintain system balance and protect against market instability.
 
-Keep in mind that despite all these measures, USND remains dependent on the three mentioned collateral assets and there is no strict guarantee that it remains overcollateralized in case of a sudden collapse of a collateral asset.
+Keep in mind that despite all these measures, MUST remains dependent on the supported collateral assets and there is no strict guarantee that it remains overcollateralized in case of a sudden collapse of a collateral asset.
 
 ### How does the system compartmentalize risk among different LSTs? 
 
 This depends on the party in question:
 
 * Borrowers: Collateral risk is limited to the collateral asset held by the borrower. A borrower isn't negatively affected by a failure of another collateral asset.
-* USND Holders: As a multi-collateral stablecoin, USND is reliant on effective liquidations of undercollateralized loans in every borrow market to remain overcollateralized. Holders are subject to the risks of all supported collateral assets.
-* Earners: Stability Pool depositors only get exposure to the asset they have opted for. However, as USND holders, they are similarly affected by potential depegging.
+* MUST Holders: As a multi-collateral stablecoin, MUST is reliant on effective liquidations of undercollateralized loans in every borrow market to remain overcollateralized. Holders are subject to the risks of all supported collateral assets.
+* Earners: Stability Pool depositors only get exposure to the asset they have opted for. However, as MUST holders, they are similarly affected by potential depegging.
 
 ### What mechanisms are in place if the Stability Pool is empty?
 
@@ -220,8 +232,8 @@ If the Stability Pool doesn't cover the full entire debt and gets completely emp
 
 The liquidator can freely choose between two fallback liquidation modes for the debt exceeding the funds in the Stability Pool:
 
-1. Just-in-time (JIT) liquidation: the liquidator sends an amount of USND corresponding to the (remaining) debt in exchange for 105% of its nominal value in ETH.
+1. Just-in-time (JIT) liquidation: the liquidator sends an amount of MUST corresponding to the (remaining) debt in exchange for 105% of its nominal value in the collateral asset.
 2. Redistribution: the liquidator triggers a redistribution, through which the Trove's entire debt and collateral is redistributed to all fellow borrowers of the respective collateral market, in proportion to their own collateral amounts. Thus, the respective borrowers will receive a share of the liquidated collateral and see their debts increase proportionally.
 
 ### Shutdown Borrow Markets
-The system may shut down borrow markets whose total collateralization ratio (TCR) falls below 110% (for ETH) or 120% (for wstETH and rETH). The shutdown is performed by incentivizing redemptions against the respective collateral (see [this](https://liquity.gitbook.io/v2-whitepaper/liquity-v2-whitepaper/functionality-and-use-cases#c9aukpugrj32) for more details)
+The system may shut down borrow markets whose total collateralization ratio (TCR) falls below the minimum threshold for each collateral type (110% for WETH, 120% for tBTC/stATOM, 140% for SAGA). The shutdown is performed by incentivizing redemptions against the respective collateral.
