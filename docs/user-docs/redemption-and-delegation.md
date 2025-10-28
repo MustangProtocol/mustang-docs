@@ -9,9 +9,9 @@ sidebar_position: 4
 
 Redemptions serve the crucial purpose of keeping MUST pegged to the value of a dollar, creating a price floor around $0.9945. They do this in a decentralized way without reliance on centralized assets, oracles, or 3rd parties.
 
-A redemption is essentially swapping MUST for ETH/LST at face value, as if 1 MUST is exactly worth $1.00. Redemptions can be initiated by anyone, but are only profitable when MUST is less than $1.
+A redemption is essentially swapping MUST for collateral at face value, as if 1 MUST is exactly worth $1.00. Redemptions can be initiated by anyone, but are only profitable when MUST is less than $1.
 
-The redeemer sends MUST to the protocol and in return  gets a mix of WETH, wstETH and rETH (minus the redemption fee). The redeemed amount is split among the different collateral assets based on their current Stability Pool backing (see [link](#how-is-the-collateral-split-determined) for more info).
+The redeemer sends MUST to the protocol and in return gets a mix of WETH, tBTC, and SAGA (minus the redemption fee). The redeemed amount is split among the different collateral assets based on their current Stability Pool backing (see [link](#how-is-the-collateral-split-determined) for more info).
 
 ![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252F0XdFvKy05sdM3JClXcI5%252Flight%2520-%2520BOLD%2520individual%2520redemption.png%3Falt%3Dmedia%26token%3D3037c032-5464-4614-b206-d9d5157c0228&width=768&dpr=4&quality=100&sign=abb38c31&sv=2)
 
@@ -55,7 +55,7 @@ In contrast to LUSD, MUST is backed by a multitude of collaterals. Instead of le
 
 The process starts with the Troves paying the lowest interest rates in each collateral market and continues until the full amount of MUST is exchanged for collateral assets. Redemptions can be partial or full, as illustrated below.
 
-In this example, the rETH market shows a full redemption of the first Trove and a partial redemption of the second. The wstETH and ETH markets have one partial and two full redemptions, respectively
+In this example, different collateral markets (WETH, tBTC, SAGA) show various combinations of full and partial redemptions across Troves with the lowest interest rates.
 
 ![](https://docs.liquity.org/~gitbook/image?url=https%3A%2F%2F2342324437-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FE2A1Xrcj7XasxOiotWky%252Fuploads%252FJtx0jgGBkGisNExyXZ5a%252Fredemption%2520split%25202.png%3Falt%3Dmedia%26token%3D79f895c0-290c-41e9-9aeb-b3fa5a3709f5&width=768&dpr=4&quality=100&sign=17e818d8&sv=2)
 
@@ -65,7 +65,7 @@ The split is dynamic, optimizing for the economic safety of the system. The logi
 
 To mitigate this risk, the system redeems proportionally to the "outside debt" of each collateral type. This is calculated as the total debt borrowed against a specific collateral minus the size of the Stability Pool for that borrowing market.
 
-Here is an example: given outside debt amounts of 100 MUST, 50 MUST and 100 MUST respectively, a redemption will result in a 40% (WETH), 20% (wstETH) and 40% (rETH) split.
+Here is an example: given outside debt amounts of 100 MUST, 50 MUST and 100 MUST respectively, a redemption will result in a 40% (WETH), 20% (tBTC) and 40% (SAGA) split.
 
 
 
@@ -145,7 +145,7 @@ If the redeemed amount exceeds the debt of an affected Trove, it doesn't get clo
 
 In the scenario that the redeemed amount of a Trove does not exceed the debt of a Trove, but would leave it between 0 and 200 MUST, the Trove would remain open with the remaining debt, and the remaining collateral. The owner of the Trove may close it by paying off the remaining debt and withdrawing the remaining collateral, or borrow anew as described above.
 
-### How to redeem MUST for collateral (mix of ETH, rETH and wstETH) using Etherscan
+### How to redeem MUST for collateral (mix of WETH, tBTC and SAGA) using the blockchain explorer
 
 **Step 1**
 

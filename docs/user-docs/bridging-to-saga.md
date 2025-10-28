@@ -39,10 +39,9 @@ Squid Router is the easiest way to bridge assets to Saga from 70+ supported chai
 Common tokens you can bridge to Saga:
 - **USDC** (recommended for stablecoins)
 - **USDT**
-- **ETH** (for borrowing with Mustang Finance)
-- **WBTC** (tBTC on Saga for borrowing)
-- **SAGA** (native token)
-- **rETH** (Rocket Pool ETH for borrowing)
+- **ETH** (can be wrapped to WETH for borrowing with Mustang Finance)
+- **WBTC** (can be bridged as tBTC on Saga for borrowing)
+- **SAGA** (native token for borrowing)
 - Most major ERC-20 tokens with sufficient liquidity
 
 ### Fees and Timing

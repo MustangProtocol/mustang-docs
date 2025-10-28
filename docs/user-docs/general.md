@@ -6,7 +6,7 @@ sidebar_position: 1
 # General
 
 ### What is Mustang Finance?
-Mustang Finance is a decentralized borrowing protocol that lets users deposit WETH, rETH, tBTC, and SAGA as collateral, and mint the stablecoin MUST at an interest rate depositors choose. Mustang Finance is a Liquity V2 fork built specifically for the Saga EVM.
+Mustang Finance is a decentralized borrowing protocol that lets users deposit WETH, tBTC, and SAGA as collateral (with stATOM coming soon), and mint the stablecoin MUST at an interest rate depositors choose. Mustang Finance is a Liquity V2 fork built specifically for the Saga EVM.
 
 ### The main use-cases for Mustang Finance are:
 
@@ -36,7 +36,7 @@ To understand Mustang Finance it's helpful to understand [Liquity](https://www.l
 | Key Differences | Description  |
 |--|--|
 | **Blockchain** | Saga EVM (Chain ID: 5464) vs Ethereum Mainnet |
-| **Collateral Types** | WETH, rETH, tBTC, SAGA vs ETH, wstETH, rETH (Liquity V2) |
+| **Collateral Types** | WETH, tBTC, SAGA (with stATOM, KING, yETH coming soon) vs ETH, wstETH, rETH (Liquity V2) |
 | **No Gas Costs** | Transactions on Saga EVM don't require gas or a gas deposit |
 | **Governance** | More protocol parameters are governable: fees, LTV requirements, minimum debt, minimum interest rate, ability to add/remove collateral branches |
 | **Security Features** | Additional security features including debt limits per collateral type |

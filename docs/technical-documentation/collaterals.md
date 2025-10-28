@@ -8,12 +8,14 @@ sidebar_position: 6
 
 MCR is the primary requirement for each trove, but there are also overall global requirements for each branch.
 
-| Token              | CCR_Tag | Initial Debt Limit | Over Col Ratio (MCR) | SCR | CCR | LTV    |
-|--------------------|---------|---------------------|------------------------|-----|-----|--------|
-| ETH                | ETH     | $100,000,000         | 110                    | 110 | 150 | 90.91% |
-| rETH (Rocket Pool) | LST     | $25,000,000          | 120                    | 110 | 160 | 83.33% |
-| tBTC               | BTC     | $100,000,000         | 110                    | 110 | 150 | 90.91% |
-| SAGA               | SAGA    | $5,000,000           | 140                    | 120 | 165 | 71.43% |
+| Token | CCR_Tag | Initial Debt Limit | Over Col Ratio (MCR) | SCR | CCR | LTV    | Status |
+|-------|---------|---------------------|------------------------|-----|-----|--------|--------|
+| WETH  | ETH     | $100,000,000        | 110                    | 110 | 150 | 90.91% | Active |
+| tBTC  | BTC     | $100,000,000        | 120                    | 110 | 150 | 83.33% | Active |
+| SAGA  | SAGA    | $5,000,000          | 140                    | 120 | 165 | 71.43% | Active |
+| stATOM | LST    | $25,000,000         | 120                    | 110 | 160 | 83.33% | Upcoming |
+| KING  | KING    | $10,000,000         | 160                    | 140 | 180 | 62.5%  | Planned |
+| yETH  | YETH    | $50,000,000         | 120                    | 110 | 160 | 83.33% | Planned |
 
 BCR is MCR + 10% in all cases.
 
