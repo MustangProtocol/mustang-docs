@@ -8,14 +8,15 @@ sidebar_position: 6
 
 MCR is the primary requirement for each trove, but there are also overall global requirements for each branch.
 
-| Token | CCR_Tag | Initial Debt Limit | Over Col Ratio (MCR) | SCR | CCR | LTV    | Status |
-|-------|---------|---------------------|------------------------|-----|-----|--------|--------|
-| WETH  | ETH     | $100,000,000        | 110                    | 110 | 150 | 90.91% | Active |
-| tBTC  | BTC     | $100,000,000        | 120                    | 110 | 150 | 83.33% | Active |
-| SAGA  | SAGA    | $5,000,000          | 140                    | 120 | 165 | 71.43% | Active |
-| stATOM | LST    | $25,000,000         | 120                    | 110 | 160 | 83.33% | Upcoming |
-| KING  | KING    | $10,000,000         | 160                    | 140 | 180 | 62.5%  | Planned |
-| yETH  | YETH    | $50,000,000         | 120                    | 110 | 160 | 83.33% | Planned |
+| Asset | Native chain | Decimals | Custom Wrapper | Initial Debt Limit | Collateralization Requirement | Max LTV | Liquidation Penalty |
+|-------|--------------|----------|----------------|-------------------|-------------------|---------|-------------------|
+| wETH | Ethereum | 18 | no | $100M | 110 | 90.91% | 5% |
+| yETH | Ethereum | 18 | no | $5M | 120 | 83.33% | 5% |
+| tBTC | Ethereum | 18 | no | $100M | 110 | 90.91% | 5% |
+| SAGA | SagaEVM | 6 | yes | $1M | 150 | 66.67% | 5% |
+| stATOM | SagaEVM | 6 | yes | $1M | 125 | 80.00% | 5% |
+| KING | Ethereum | 18 | no | $500K | 150 | 66.67% | 5% |
+| yUSD | SagaEVM | 18 | no | $5M | 115 | 86.96% | 5% |
 
 BCR is MCR + 10% in all cases.
 
