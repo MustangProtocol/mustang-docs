@@ -25,7 +25,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0xdaa7957701f7f2b4462756d511999f5d5d77cfdb` | WETH wrapper contract |
+| Token Address | `0xeb41D53F14Cb9a67907f2b8b5DBc223944158cCb` | WETH token address on SagaEVM |
 | AddressesRegistry | `0x4c2d21407e917c290f4336d5bc1db6df0b5f18f1` | Branch-specific address registry |
 | BorrowerOperations | `0xd1abdcdaebce8fe6d8c9da3c557cad2d0d0f0dd7` | Trove management operations |
 | TroveManager | `0x13e9927901c3cec3234172addf47581077ccba0b` | Core trove management logic |
@@ -45,7 +45,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0x3bb716e0ec015b65f0058de951795308c32dd977` | yETH wrapper contract |
+| Token Address | `0xA6F89de43315B444114258f6E6700765D08bcd56` | yETH token address on SagaEVM |
 | AddressesRegistry | `0x7d63ab7531d8b1190a5b89ae1a38b0088e27dbdb` | Branch-specific address registry |
 | BorrowerOperations | `0x70e1f01ce47c966d3bd98aed927c5ed0d54efb6a` | Trove management operations |
 | TroveManager | `0xfe474264e7d65005719bac266190db1f8ba8ed64` | Core trove management logic |
@@ -65,7 +65,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0x87acc5c6bd3cacdecee246299c307546d4602614` | tBTC wrapper contract |
+| Token Address | `0xa740E6758e309840ffFfe58f749F018386A3b70b` | tBTC token address on SagaEVM |
 | AddressesRegistry | `0x54b4dfd03181504672a0ba775c349e1d31cd9649` | Branch-specific address registry |
 | BorrowerOperations | `0x677a5c863490dd6b674b92410c69688135f2d9e1` | Trove management operations |
 | TroveManager | `0x0a66df058fb462458a10f01393d6f2118104fe8a` | Core trove management logic |
@@ -85,7 +85,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0x17588401ccb9ee8e658d85b8807aec825296b84b` | SAGA wrapper contract |
+| Token Address | `0xA19377761FED745723B90993988E04d641c2CfFE` | SAGA token address on SagaEVM |
 | AddressesRegistry | `0xce85847bd75f9f126e3b3efdc987c895a48614b5` | Branch-specific address registry |
 | BorrowerOperations | `0xb349f0225752380d0a1b6463799bf8f099b4e11e` | Trove management operations |
 | TroveManager | `0x4eafce7e6054bce0868678802ec61f9ab075ca1a` | Core trove management logic |
@@ -105,7 +105,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0xe47f50c09ab4d699a23ad702616d140098022efd` | stATOM wrapper contract |
+| Token Address | `0xDaF9d9032b5d5C92528d6aFf6a215514B7c21056` | stATOM token address on SagaEVM |
 | AddressesRegistry | `0xcf7e28abb54b7c306061b83058fb8c3f535a921a` | Branch-specific address registry |
 | BorrowerOperations | `0xf9339df2bf05a3548afe304c7992480c7701a754` | Trove management operations |
 | TroveManager | `0xdcd96430e273ec8764ae3f50c67a150bd9bb3390` | Core trove management logic |
@@ -125,7 +125,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0x9fd2f2a82ac3068f4a6d541823b62d98d14e343c` | KING wrapper contract |
+| Token Address | `0x58d9fbBc6037dedfBA99cAfA28e4C371b795ad97` | KING token address on SagaEVM |
 | AddressesRegistry | `0xe6f3f507b044fd92680a02fb87e0913fda37ad20` | Branch-specific address registry |
 | BorrowerOperations | `0xc86a2221fb969f50914666222c7a2420dae793e0` | Trove management operations |
 | TroveManager | `0xa8fc7de1015c113b8f2dba58cc5e0e846fbaf74a` | Core trove management logic |
@@ -145,7 +145,7 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| WrappedToken | `0x7a2673b51477cd6b55795d73c681fe72032fc5af` | yUSD wrapper contract |
+| Token Address | `0x839e7e610108Cf3DCc9b40329db33b6E6bc9baCE` | yUSD token address on SagaEVM |
 | AddressesRegistry | `0x6e3c69c548c2c96bd81f6ff7383314cf2de0e957` | Branch-specific address registry |
 | BorrowerOperations | `0x2d221d3368a935a0d6f5eea6dca9be1f16963e35` | Trove management operations |
 | TroveManager | `0x6a08df8ffc74baac2ad49317f1972be5c5cb28c6` | Core trove management logic |
@@ -166,5 +166,5 @@ These contracts are shared across all collateral branches:
 - All addresses are from the latest deployment on Saga EVM (Chain ID: 5464).
 - Each collateral branch operates independently with its own set of contracts, isolating risks.
 - Core contracts are shared across all branches.
-- WrappedToken contracts handle different decimal precisions for various collateral types.
+- Token Address shows the actual collateral token address registered in the Collateral Registry for each branch. Some tokens may be wrapped while others are native, but this address represents the exact token used by each branch.
 - Price feeds provide real-time pricing data for each collateral type with several safe-guards built in.
