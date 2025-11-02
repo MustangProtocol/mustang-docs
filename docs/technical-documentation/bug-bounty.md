@@ -2,6 +2,10 @@
 sidebar_position: 3
 ---
 
+# Mustang Bug Bounty 
+
+Most code related
+
 # Liquity's Bug Bounty
 
 A bug bounty program for Liquity's underlying smart contracts that Mustang Finance uses is now live. We intend for hackers to look for smart contract vulnerabilities in our system that can lead to loss of funds or locked components.

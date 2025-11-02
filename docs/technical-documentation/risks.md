@@ -4,7 +4,9 @@ sidebar_position: 6
 
 # Audits & Risk Disclosure
 
-Detailed disclosures of protocol risks and user considerations. Mustang Finance code has been audited several times by top firms.
+Detailed disclosures of protocol risks and user considerations. Mustang Finance code has been audited several times by Pashov Audit Group, and several independent auditors. It has also been scranned by Octane Security, an automated tested and security monitoring service.
+
+See a list of audit reports here: https://github.com/MustangProtocol/audit-reports/tree/main
 
 ## Contract Risk 
 
