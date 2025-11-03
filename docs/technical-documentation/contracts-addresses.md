@@ -8,6 +8,12 @@ sidebar_position: 1
 **Network:** Saga EVM (Chain ID: 5464)  
 **Deployment Date:** Latest  
 
+## Governance
+
+| Contract | Address | Description |
+|----------|---------|-------------|
+| Governance Safe | `0x92A857b519F73783E27642c0f4A5DBAc8953e66B` | 2-of-3 multisig controlling protocol parameters and receiving fees |
+
 ## Core Contracts
 
 These contracts are shared across all collateral branches:
