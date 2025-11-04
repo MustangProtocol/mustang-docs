@@ -50,12 +50,11 @@ Mustang works with the following collaterals:
 - tBTC (Threshold Bitcoin)
 - SAGA (Wrapped SAGA)
 
-**Upcoming Collaterals:**
-- stATOM (Staked ATOM) - Deployment pending
-
-**Planned Future Collaterals:**
+**Additional Collaterals:**
+- stATOM (Staked ATOM)
 - KING
 - yETH (Yearn ETH)
+- yUSD
 
 :::tip
 New collateral types can be added by governance. Existing ones can be removed, although users will always have the ability to withdraw their positions in the case of a collateral being removed. 
@@ -123,9 +122,10 @@ That depends on the collateral type you will use:
 - WETH: 90.91% LTV (110% MCR)
 - tBTC: 83.33% LTV (120% MCR)
 - SAGA: 71.43% LTV (140% MCR)
-- stATOM (upcoming): 83.33% LTV (120% MCR)
-- KING (planned): 62.5% LTV (160% MCR)
-- yETH (planned): 83.33% LTV (120% MCR)
+- stATOM: 80% LTV (125% MCR)
+- KING: 66.67% LTV (150% MCR)
+- yETH: 83.33% LTV (120% MCR)
+- yUSD: 86.96% LTV (115% MCR)
 
 ### What is the refundable gas deposit?
 
@@ -212,7 +212,7 @@ Make sure you choose a frontend that supports this functionality, and be mindful
 
 ### How are collateral risks mitigated?
 
-Mustang Finance has separate borrow markets for each collateral type with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (WETH, tBTC, SAGA, and upcoming stATOM).
+Mustang Finance has separate borrow markets for each collateral type with their own Stability Pools (for efficient liquidations), user-set interest rates, and LTV factors for their respective assets (WETH, tBTC, SAGA, stATOM, KING, yETH, yUSD).
 
 Risks are mitigated through temporary borrowing restrictions in times of low collateralization of a given market, a redemption logic prioritizing  collateral with less Stability Pool backing, and a collateral shutdown as an emergency measure to maintain system balance and protect against market instability.
 

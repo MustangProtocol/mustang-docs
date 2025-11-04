@@ -12,4 +12,4 @@ While extending Liquity's base protocol, we did not do it in the dark or in secr
 
 When Liquity wins, Mustang wins. When Mustang wins, Liquity wins. 
 
-Learn more about our BOLD Incentive Program here: https://www.mustangfinance.org/writing/bold-incentive-program
+Learn more about our BOLD Incentive Program here: https://www.nerite.org/writing/bold-incentive-program
