@@ -20,10 +20,10 @@ These contracts are shared across all collateral branches:
 
 | Contract | Address | Description |
 |----------|---------|-------------|
-| MUST Stablecoin | `0xf4e4f7b7a09c50d3cc710151536b88b48422f48b` | Main protocol token |
-| CollateralRegistry | `0x04920e4abbf8a0173f2545f83bfb62beb98aaadd` | Registry for all collateral types |
-| HintHelpers | `0xece3fa12e6bcbc34291060febf0428855ceb805b` | Helper contract for trove operations |
-| MultiTroveGetter | `0x0213a091fdba1e8a67a37f5fbb47f7c93cb61c46` | Batch trove data retrieval |
+| MUST Stablecoin | `0xa8b56ce258a7f55327bde886b0e947ee059ca434` | Main protocol token |
+| CollateralRegistry | `0xf39bdcfb55374ddb0948a28af00b6474a566ac22` | Registry for all collateral types |
+| HintHelpers | `0xf2a7cab8056bcc477872b34f9be1d1d67a7d109c` | Helper contract for trove operations |
+| MultiTroveGetter | `0x651d868ef9d04ca0b2a3bf2bc299b92e58aed8c3` | Batch trove data retrieval |
 
 ## Collateral Branches
 
@@ -42,8 +42,10 @@ These contracts are shared across all collateral branches:
 | GasPool | `0xcb65e9498d9d2eed03a83c49d918b3084795ac81` | Gas compensation pool |
 | CollSurplusPool | `0x40721101f1de731f34a207f783b2a40026a65f0d` | Collateral surplus pool |
 | SortedTroves | `0xd4570c6a2bd6e18ff7c8ce1341ba8f2e0154a476` | Sorted trove data structure |
-| MetadataNFT | `0x72fa15d8f87c81acc03304899867f90363f42164` | NFT metadata contract |
+| MetadataNFT | `0x42673e96954006f7b71989aea5d0566274d616c8` | NFT metadata contract |
 | PriceFeed | `0x080612f74f3c823b0c7f1649136ab8a096d2576f` | WETH price feed |
+| FixedAssetReader | `0x82bae1eeb3e5e01dc542d0d61bd4d043627a305c` | Fixed asset price reader |
+| GasCompZapper | `0xe68eeeb004ee98b57a50af279950cf4d98fb0aa6` | Gas compensation zapper |
 | LeverageZapper | `0x31a2552006b47a77c10b18fde3ac35ba2b1c09a0` | Leverage zapper contract |
 
 ### Branch 1: yETH (YieldFi ETH)
@@ -61,8 +63,10 @@ These contracts are shared across all collateral branches:
 | GasPool | `0x837ac0a8a523c416bf43843205372c45966bb66f` | Gas compensation pool |
 | CollSurplusPool | `0x882d8e06d3389a9a1e9db5d407cdf28957605a03` | Collateral surplus pool |
 | SortedTroves | `0xceea52002f3d226f0162cd8846c0ae5153fb89df` | Sorted trove data structure |
-| MetadataNFT | `0x42673e96954006f7b71989aea5d0566274d616c8` | NFT metadata contract |
+| MetadataNFT | `0x4e3c8df114b556b3df982c9c49ce9a585d6e36ab` | NFT metadata contract |
 | PriceFeed | `0x5329e02140e328397b65428be28776e025d08edc` | yETH price feed |
+| FixedAssetReader | `0x8446e5b215189f200c56a0c3992e5f2afc5b97ae` | Fixed asset price reader |
+| GasCompZapper | `0xb8825197bcb1cdf5937a9a2dc1c568dc8870d824` | Gas compensation zapper |
 | LeverageZapper | `0x2e0128f8d160455d1bd90dd7160251f2c4aeec2d` | Leverage zapper contract |
 
 ### Branch 2: tBTC (Threshold BTC)
@@ -80,8 +84,10 @@ These contracts are shared across all collateral branches:
 | GasPool | `0xcb32df9b0bf6cba75893c6fdcff0856eb10007cb` | Gas compensation pool |
 | CollSurplusPool | `0xb5b890b1b12d9a0419931ad613be65f5fe5c7807` | Collateral surplus pool |
 | SortedTroves | `0xc169c5258b404b1c0c5edc5f11302147180e91c5` | Sorted trove data structure |
-| MetadataNFT | `0x4e3c8df114b556b3df982c9c49ce9a585d6e36ab` | NFT metadata contract |
+| MetadataNFT | `0x3aec73c5902e42b0e626a77a6b409199f2867431` | NFT metadata contract |
 | PriceFeed | `0x2737550dd3d1ae3f3b0461947d413497f1712240` | tBTC price feed |
+| FixedAssetReader | `0xe7cd2f6edbb2e31c1c556ec292837b3deb45bf54` | Fixed asset price reader |
+| GasCompZapper | `0x072fc09f063a95b0efae9054203df7a1cc9ed1a6` | Gas compensation zapper |
 | LeverageZapper | `0xcc17aaa404d76358b84a414735f0d7eda59f6ad8` | Leverage zapper contract |
 
 ### Branch 3: SAGA
@@ -89,6 +95,7 @@ These contracts are shared across all collateral branches:
 | Contract | Address | Description |
 |----------|---------|-------------|
 | Token Address | `0xA19377761FED745723B90993988E04d641c2CfFE` | SAGA token address on SagaEVM |
+| Wrapped Token | `0xaa5e2ea42f0a9c3b43f2b7d26eaa2ba17ae41dac` | Wrapped SAGA token contract |
 | AddressesRegistry | `0x1b6b326655f2d03953ed931948475b3fcf0d0fb2` | Branch-specific address registry |
 | BorrowerOperations | `0x0bb7c14d34aa27741790c44835bd12cba8d2d1d2` | Trove management operations |
 | TroveManager | `0x9d0c4b508089c8466e1569c95811f9171da21f56` | Core trove management logic |
@@ -99,8 +106,10 @@ These contracts are shared across all collateral branches:
 | GasPool | `0x5a6f24b6a74a139cfe4110a5f1b0564c7b2b5480` | Gas compensation pool |
 | CollSurplusPool | `0x50c7afece49b0a88d90425f081a10d1cadd55e88` | Collateral surplus pool |
 | SortedTroves | `0x05c8742fa874e2080cb48c94a6bf03793f26c685` | Sorted trove data structure |
-| MetadataNFT | `0x3aec73c5902e42b0e626a77a6b409199f2867431` | NFT metadata contract |
+| MetadataNFT | `0x6dc77ecbef17e25480f66fa95714534d5c505f72` | NFT metadata contract |
 | PriceFeed | `0x93a80cd6de30d096e391d96dddc9c7d078091f36` | SAGA price feed |
+| FixedAssetReader | `0x2302ad2efa0a524b0ff0e6be4fe521a8c469d50b` | Fixed asset price reader |
+| WrappedTokenZapper | `0x7dc35c44f317125a4e10f8b814989e45886731ad` | Wrapped token zapper contract |
 | LeverageZapper | `0x7dc35c44f317125a4e10f8b814989e45886731ad` | Leverage zapper contract |
 
 ### Branch 4: stATOM (Stride Staked ATOM)
@@ -108,6 +117,7 @@ These contracts are shared across all collateral branches:
 | Contract | Address | Description |
 |----------|---------|-------------|
 | Token Address | `0xDaF9d9032b5d5C92528d6aFf6a215514B7c21056` | stATOM token address on SagaEVM |
+| Wrapped Token | `0x32604f9ea6c739d0c56b2d01e07a57c7a05ff007` | Wrapped stATOM token contract |
 | AddressesRegistry | `0xf671dd2de7a19a49e90f5df1cfea7f921a0f0ae2` | Branch-specific address registry |
 | BorrowerOperations | `0x2ac8eb0d574e137e21e8cf313e23bf4b6078bcf4` | Trove management operations |
 | TroveManager | `0x2300966646832a703c6bb0194eb900a35703125c` | Core trove management logic |
@@ -118,8 +128,10 @@ These contracts are shared across all collateral branches:
 | GasPool | `0xf65557393d056d2450ef1bb5671fa54d171c0f92` | Gas compensation pool |
 | CollSurplusPool | `0xa0b34f50f1926d15cab09b4b975cca0a3442de04` | Collateral surplus pool |
 | SortedTroves | `0x0d9bf6e3eb3bb6fadefe55ec3294066c8d3431c5` | Sorted trove data structure |
-| MetadataNFT | `0x6dc77ecbef17e25480f66fa95714534d5c505f72` | NFT metadata contract |
+| MetadataNFT | `0xebafae7620de2385ccc81111a73f59a0eccf818a` | NFT metadata contract |
 | PriceFeed | `0xb565638e0ad6904a0eb06718a5da404818fa9a0a` | stATOM price feed |
+| FixedAssetReader | `0x43ece357ea9acf2e5b3e1f2357a3b80fe3ffb016` | Fixed asset price reader |
+| WrappedTokenZapper | `0xa29ed354b419c0c7f82665c6384cc2eb9cabb7f4` | Wrapped token zapper contract |
 | LeverageZapper | `0xa29ed354b419c0c7f82665c6384cc2eb9cabb7f4` | Leverage zapper contract |
 
 ### Branch 5: KING
@@ -137,8 +149,10 @@ These contracts are shared across all collateral branches:
 | GasPool | `0x49381b9b5f219beace8287c5d3a57aa07eac8ca2` | Gas compensation pool |
 | CollSurplusPool | `0x9abcc04e6392ee6a3131ac873c55fe8adb07ba96` | Collateral surplus pool |
 | SortedTroves | `0x47f65ef3ebe52fee1ba778095ca5ee67dd9f20dc` | Sorted trove data structure |
-| MetadataNFT | `0xebafae7620de2385ccc81111a73f59a0eccf818a` | NFT metadata contract |
+| MetadataNFT | `0x6182f3bfb6e1b0e326c72f87f95c65aa4fe8ecbf` | NFT metadata contract |
 | PriceFeed | `0x8e7f799324d888aa94aaa0179370294a496f31fc` | KING price feed |
+| FixedAssetReader | `0x073e24bd3ff224af1a98ffcc4a0412e77e03aca9` | Fixed asset price reader |
+| GasCompZapper | `0x5c5f1b16f6363460ae95834880f4149071020b30` | Gas compensation zapper |
 | LeverageZapper | `0x1b2443df05c8aca7301825d4a1fbcd0d7ac09b14` | Leverage zapper contract |
 
 ### Branch 6: yUSD (YieldFi USD)
@@ -156,14 +170,21 @@ These contracts are shared across all collateral branches:
 | GasPool | `0x36f12d021b6334848c466e77b14bac7dc1f51aa3` | Gas compensation pool |
 | CollSurplusPool | `0xd06868531c94ae1ebb6e3637c0f3b33f1782e573` | Collateral surplus pool |
 | SortedTroves | `0x54861f1cf3f53932b020d8649d8b3c5a0dbc7c69` | Sorted trove data structure |
-| MetadataNFT | `0x6182f3bfb6e1b0e326c72f87f95c65aa4fe8ecbf` | NFT metadata contract |
+| MetadataNFT | `0x72fa15d8f87c81acc03304899867f90363f42164` | NFT metadata contract |
 | PriceFeed | `0x224b80725fff00fbf06336a93ba94de7b5f88022` | yUSD price feed |
+| FixedAssetReader | `0xc8764377e19b0a3995cb79f0794fb52df249a587` | Fixed asset price reader |
+| GasCompZapper | `0x9544a342bbd0970e89315ab0b202c7ede6f7e0db` | Gas compensation zapper |
 | LeverageZapper | `0xb9cecd6801cfcabe477a9968d0dd389b42a957af` | Leverage zapper contract |
 
 ## Notes
 
 - All addresses are from the latest deployment on Saga EVM (Chain ID: 5464).
 - Each collateral branch operates independently with its own set of contracts, isolating risks.
-- Core contracts are shared across all branches.
+- Core contracts (MUST Stablecoin, CollateralRegistry, HintHelpers, MultiTroveGetter) are shared across all branches.
 - Token Address shows the actual collateral token address registered in the Collateral Registry for each branch. Some tokens may be wrapped while others are native, but this address represents the exact token used by each branch.
 - Price feeds provide real-time pricing data for each collateral type with several safe-guards built in.
+- **New Contracts**: This deployment includes several new contract types:
+  - **FixedAssetReader**: Provides fixed asset price reading functionality across all branches
+  - **GasCompZapper**: Gas compensation zapper contract (available in most branches)
+  - **WrappedTokenZapper**: Token wrapping/unwrapping functionality (available for SAGA and stATOM branches)
+  - **Wrapped Token**: ERC20 wrapper contracts for native tokens (SAGA and stATOM)
