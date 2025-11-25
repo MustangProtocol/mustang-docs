@@ -24,7 +24,7 @@ For a complete list of all audit reports, please visit our [audit-reports reposi
 
 ## Other Security Measures
 
-- **Octane Security:** Automated vulnerability testing with reports available for each pull request on our [GitHub repository](https://github.com/mustangfinance)
+- **Octane Security:** Automated vulnerability testing with reports available for each pull request on our [GitHub repository](https://github.com/MustangProtocol/must-finance)
 
 ## Risk Disclosure
 
