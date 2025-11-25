@@ -91,11 +91,11 @@ const config = {
             items: [
               {
                 label: "User Docs",
-                to: "http://docs.mustangfinance.org/docs/category/user-docs/",
+                to: "/docs/category/user-docs/",
               },
               {
                 label: "Technical Documentation",
-                to: "http://docs.mustangfinance.org/docs/category/technical-documentation/",
+                to: "/docs/category/technical-documentation/",
               },
             ],
           },
